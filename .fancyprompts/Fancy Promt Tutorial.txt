@@ -1,0 +1,88 @@
+  _______ ___ ___  _______ ______  _______ _______ _______ 
+ |   _   |   Y   )|   _   |   _  \|       |   _   |   _   \
+ |.  1   |.  1  / |.  1   |.  |   |.|   | |.  |   |.  l   /
+ |.  _   |.  _  \ |.  _   |.  |   `-|.  |-|.  |   |.  _   1
+ |:  |   |:  |   \|:  |   |:  |   | |:  | |:  1   |:  |   |
+ |::.|:. |::.| .  |::.|:. |::.|   | |::.| |::.. . |::.|:. |
+ `--- ---`--- ---'`--- ---`--- ---' `---' `-------`--- ---'
+        _______ ___ ___ ___ ______   _______ _______             
+       |   _   |   Y   |   |   _  \ |   _   |   _   |            
+       |.  |___|.  |   |.  |.  |   \|.  1___|   1___|            
+       |.  |   |.  |   |.  |.  |    |.  __)_|____   |            
+       |:  1   |:  1   |:  |:  1    |:  1   |:  1   |            
+       |::.. . |::.. . |::.|::.. . /|::.. . |::.. . |            
+       `-------`-------`---`------' `-------`-------'
+
+#---------------------------------------------------------#
+         FANCY PROMPTS TERMINAL COSTUMIZATION GUIDE
+#----------------------By Akantor-------------------------#
+
+Fancy Prompts will costumize the look of your terminal.
+This idea was taken from MX Linux bash configuration tool,
+unforunetly i couldnt make the tool that lets you change
+everything to a simple gui work due to dependicies needed.
+
+The good part is we only need one file to make this work.
+The preview.png file that comes with this guide will let
+you see how your terminal will look.
+
+
+NOTE: if you are using powerline code on your .bashrc this
+      will overwrite how the terminal looks.
+      Also there is a help folder that you  can open the 
+      html on firefox to see what its possible to do.
+      right now the default look is the one in preview.png
+      provided.
+
+
+#--How to do it--#
+
+STEP 1> Go to your home folder and use ctrl+h to show
+        hidden files
+
+STEP 2> Create a folder with the name ".fancyprompts"
+        without quotes on your home directory.
+
+STEp 3> Copy the file fancy-prompts.bash to that folder
+        that we created now.
+
+STEP 4> Make a backup of the .bashrc file and remember
+        where you kept it.
+
+STEP 5> Open the orginal .bashrc in your home folder
+        in any text editor and scroll to the end.
+        Press ENTER twice
+
+STEP 6> Copy the content bellow and paste it and the of
+        the .bashrc file and save it and open your terminal
+        to see if changes were applied.
+
+CONTENT TO COPY TO .bashrc FILE: 
+#:------------------------------------------------------------------------
+#:
+#: This script cannot be run as a program.  You must source it:
+#:
+#:     $ bash
+#:     $ source fancy-prompts.bash
+#:     $ prompt-usage
+#:     $ prompt-fancy
+#:
+#: To install, source this file inside your .bashrc file and set the prompt.
+#: If your .bashrc already sets PROMPT_COMMAND then source this file *before*
+#: setting PROMPT_COMMAND and have your routine call fancy-prompts-command.
+#:
+     source ~/.fancyprompts/fancy-prompts.bash
+#:    PROMPT_COMMAND=prompt-fancy
+     my-prompt-command() {
+         ...
+         fancy-prompts-command
+     }
+     prompt-curl -P -p "bash> "
+#:
+#:------------------------------------------------------------------------
+
+
+STEP 7>If you dont like how it looks, simply open the .bashrc file that we
+       edited and delete content pasted before or replace the .bashrc file with
+       the backup made previously.
+
