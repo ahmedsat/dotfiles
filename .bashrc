@@ -126,15 +126,19 @@ fi
 #: If your .bashrc already sets PROMPT_COMMAND then source this file *before*
 #: setting PROMPT_COMMAND and have your routine call fancy-prompts-command.
 #:
-source ~/.fancyprompts/fancy-prompts.bash
-source ~/.terminal/aliases.sh
+source ~/.config/fancyprompts/fancy-prompts.bash
+source ~/.config/terminal/aliases.sh
 # :    PROMPT_COMMAND=prompt-fancy
 my-prompt-command() {
   ...
   fancy-prompts-command
 }
 
-prompt-curl -b -D -T AhmedSat
+prompt-curl -b -D #-T AhmedSat
 # prompt-curl -P -p " >>> "
 #:
 #:------------------------------------------------------------------------
+
+# set CapsLock key to work as Ctrl
+/usr/bin/setxkbmap -option "ctrl:nocaps"
+

@@ -1,0 +1,19 @@
+(setq inhibit-startup-message t) ; don't show welcome screen
+(tool-bar-mode -1) ; hide tool bar
+(menu-bar-mode -1) ; hide menu bar
+(scroll-bar-mode -1) ; hide scroll bar
+(global-display-line-numbers-mode 1) ; show line numbers
+
+(require 'package) ; start loading exernal packages 
+(add-to-list 'package-archives '
+	     ("melpa" . "https://melpa.org/packages/") t) ; load melpa
+(add-to-list 'package-archives '
+	     ("melpa-stable" . "https://stable.melpa.org/packages/") t) ; load melpa-stable
+(package-initialize) ; initializing packages
+
+(load-theme 'dracula t) ; set color theme
+
+(recentf-mode 1)
+
+;; (bind-key* "C-M-x" eval-defun)
+

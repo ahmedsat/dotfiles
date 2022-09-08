@@ -17,8 +17,6 @@ alias purge='sudo nala purge'
 alias remove='sudo nala remove'
 alias autopurge='sudo nala autopurge'
 
-alias bash-reload='source ~/.bashrc' # reload .bashrc file
+alias reload='source ~/.bashrc' # reload .bashrc file
 
-# mobile server
-
-alias connect-to-mobile='ssh u0_a115@192.168.1.3 -p8022'
+alias lxde-restart='lxpanelctl restart && openbox --restart'
