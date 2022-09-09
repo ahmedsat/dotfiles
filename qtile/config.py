@@ -16,17 +16,22 @@ keys = [
     Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
     Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
     Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
-    Key([mod], "space", lazy.layout.next(), desc="Move window focus to other window"),
+    Key([mod], "space", lazy.layout.next(),
+        desc="Move window focus to other window"),
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
-    Key([mod, "shift"], "h", lazy.layout.shuffle_left(), desc="Move window to the left"),
-    Key([mod, "shift"], "l", lazy.layout.shuffle_right(), desc="Move window to the right"),
+    Key([mod, "shift"], "h", lazy.layout.shuffle_left(),
+        desc="Move window to the left"),
+    Key([mod, "shift"], "l", lazy.layout.shuffle_right(),
+        desc="Move window to the right"),
     Key([mod, "shift"], "j", lazy.layout.shuffle_down(), desc="Move window down"),
     Key([mod, "shift"], "k", lazy.layout.shuffle_up(), desc="Move window up"),
     # Grow windows. If current window is on the edge of screen and direction
     # will be to screen edge - window would shrink.
-    Key([mod, "control"], "h", lazy.layout.grow_left(), desc="Grow window to the left"),
-    Key([mod, "control"], "l", lazy.layout.grow_right(), desc="Grow window to the right"),
+    Key([mod, "control"], "h", lazy.layout.grow_left(),
+        desc="Grow window to the left"),
+    Key([mod, "control"], "l", lazy.layout.grow_right(),
+        desc="Grow window to the right"),
     Key([mod, "control"], "j", lazy.layout.grow_down(), desc="Grow window down"),
     Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
     Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
@@ -48,30 +53,28 @@ keys = [
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 
     # my custom key bindings
-    Key(["control","shift"], "r", lazy.reload_config(), desc="Reload the config"),
-    Key([mod], "e",lazy.spawn(fileManger),desc="Lunch file manager"),
+    Key(["control", "shift"], "r", lazy.reload_config(), desc="Reload the config"),
+    Key([mod], "e", lazy.spawn(fileManger), desc="Lunch file manager"),
 ]
-
-
 
 
 groups = [
-  Group("WWW"),
-  Group("DEV"),
-  Group("SYS"),
-  Group("FILE"),
-  Group("OTHER"),
+    Group("WWW"),
+    Group("DEV"),
+    Group("SYS"),
+    Group("FILE"),
+    Group("OTHER"),
 ]
 
 groups_keys = {
-  "w":groups[0],
-  "d":groups[1],
-  "s":groups[2],
-  "f":groups[3],
-  "o":groups[4],
-} 
+    "w": groups[0],
+    "d": groups[1],
+    "s": groups[2],
+    "f": groups[3],
+    "o": groups[4],
+}
 
-for k,g in groups_keys.items():
+for k, g in groups_keys.items():
     keys.extend(
         [
             # mod1 + letter of group = switch to group
@@ -86,7 +89,8 @@ for k,g in groups_keys.items():
                 [mod, "shift"],
                 k,
                 lazy.window.togroup(g.name, switch_group=True),
-                desc="Switch to & move focused window to group {}".format(g.name),
+                desc="Switch to & move focused window to group {}".format(
+                    g.name),
             ),
             # Or, use below if you prefer not to switch to that group.
             # # mod1 + shift + letter of group = move focused window to group
@@ -94,7 +98,6 @@ for k,g in groups_keys.items():
             #     desc="move focused window to group {}".format(i.name)),
         ]
     )
-
 
 
 layouts = [
@@ -122,7 +125,7 @@ extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
-        bottom=bar.Bar(
+        top=bar.Bar(
             [
                 widget.CurrentLayout(),
                 widget.GroupBox(),
@@ -134,12 +137,26 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                 ),
-                widget.TextBox("default config", name="default"),
-                widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
+                # widget.TextBox("default config", name="default"),
+                # widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
                 widget.Systray(),
-                widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
+                # widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
+                widget.CPUGraph(),
+                widget.CheckUpdates(
+                    # distro='Debian_checkupdates',
+                    background='#6272a4',
+                    colour_have_updates='ffffff',
+                    colour_no_updates='ffffff',
+                    display_format='Updates: {updates}',
+                    distro="Debian",
+                    execute='tilix -e sudo nala upgrade',
+                    foreground='#8be9fd',
+                    no_update_string='None',
+                    padding=4,
+                    update_interval=60,),
+                widget.Clock(format="%H:%M"),
                 widget.QuickExit(),
             ],
             24,
@@ -151,8 +168,10 @@ screens = [
 
 # Drag floating layouts.
 mouse = [
-    Drag([mod], "Button1", lazy.window.set_position_floating(), start=lazy.window.get_position()),
-    Drag([mod], "Button3", lazy.window.set_size_floating(), start=lazy.window.get_size()),
+    Drag([mod], "Button1", lazy.window.set_position_floating(),
+         start=lazy.window.get_position()),
+    Drag([mod], "Button3", lazy.window.set_size_floating(),
+         start=lazy.window.get_size()),
     Click([mod], "Button2", lazy.window.bring_to_front()),
 ]
 
