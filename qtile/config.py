@@ -1,9 +1,22 @@
-from libqtile import bar, layout, widget
-from libqtile.config import Click, Drag, Group, Key, Match, Screen
+# -*- coding: utf-8 -*-
+import os
+import re
+import socket
+import subprocess
+from libqtile import qtile
+from libqtile.config import Click, Drag, Group, KeyChord, Key, Match, Screen
+from libqtile.command import lazy
+from libqtile import layout, bar, widget, hook
 from libqtile.lazy import lazy
-from libqtile.utils import guess_terminal
+# from powerline.bindings.qtile.widget import PowerlineTextBox
 
+# mod keys
 mod = "mod4"
+alt = "mod1"
+shift = "shift"
+space = "space"
+control = "control"
+
 # terminal = guess_terminal()
 terminal = "tilix"
 fileManger = "pcmanfm"
@@ -55,6 +68,8 @@ keys = [
     # my custom key bindings
     Key(["control", "shift"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod], "e", lazy.spawn(fileManger), desc="Lunch file manager"),
+    Key([alt], "space", lazy.widget["keyboardlayout"].next_keyboard(),
+        desc="Next keyboard layout."),
 ]
 
 
@@ -112,59 +127,260 @@ layouts = [
     # layout.RatioTile(),
     # layout.Tile(),
     # layout.TreeTab(),
+    # layout.TreeTab(
+    #     fontsize=10,
+    #     sections=["FIRST", "SECOND", "THIRD", "FOURTH"],
+    #     section_fontsize=10,
+    #     border_width=2,
+    #     bg_color="1c1f24",
+    #     active_bg="c678dd",
+    #     active_fg="000000",
+    #     inactive_bg="a9a1e1",
+    #     inactive_fg="1c1f24",
+    #     padding_left=0,
+    #     padding_x=0,
+    #     padding_y=5,
+    #     section_top=10,
+    #     section_bottom=20,
+    #     level_shift=8,
+    #     vspace=3,
+    #     panel_width=200
+    # ),
     # layout.VerticalTile(),
     # layout.Zoomy(),
 ]
 
+
+colors = [["#282c34", "#282c34"],
+          ["#1c1f24", "#1c1f24"],
+          ["#dfdfdf", "#dfdfdf"],
+          ["#da8548", "#da8548"],
+          ["#a9a1e1", "#a9a1e1"],
+          ["#c678dd", "#c678dd"],
+          ["#98be65", "#98be65"],
+          ["#51afef", "#51afef"],
+          ["#46d9ff", "#46d9ff"],
+          ["#ff6c6b", "#ff6c6b"],
+          ]
+
+arrow = ''
+
+
 widget_defaults = dict(
-    font="sans",
-    fontsize=12,
-    padding=3,
+    # font="sans",
+    # fontsize=12,
+    # padding=3,
+    font="Ubuntu Bold",
+    fontsize=10,
+    # padding=2,
+    background=colors[2]
 )
 extension_defaults = widget_defaults.copy()
+
+widgetsList = [
+    widget.CheckUpdates(
+        update_interval=1800,
+        distro="Debian",
+        display_format="Updates: {updates} ",
+        foreground=colors[1],
+        colour_have_updates=colors[1],
+        colour_no_updates=colors[1],
+        mouse_callbacks={'Button1': lambda: qtile.cmd_spawn(
+            terminal + ' -e sudo nala upgrade')},
+        padding=5,
+        background=colors[3]
+    ),
+
+
+    widget.Volume(
+        foreground=colors[1],
+        background=colors[7],
+        fmt='Vol: {}',
+        # emoji=True,
+        padding=5,
+    ),
+    widget.KeyboardLayout(
+        configured_keyboards=['us', 'ar'],
+        foreground=colors[1],
+        background=colors[8],
+    ),
+
+    widget.Clock(
+        fontsize=18,
+        format="%H:%M",
+        foreground=colors[1],
+        background=colors[9],
+    ),
+]
+
+
+def currentLayouts():
+    return [
+        widget.TextBox(
+            text='|',
+            font="Ubuntu Mono",
+            background=colors[0],
+            foreground='474747',
+            padding=2,
+        ),
+        widget.CurrentLayoutIcon(
+            custom_icon_paths=[os.path.expanduser(
+                "~/.config/qtile/icons")],
+            foreground=colors[2],
+            background=colors[0],
+            padding=0,
+            scale=0.7
+        ),
+        widget.CurrentLayout(
+            foreground=colors[2],
+            background=colors[0],
+            padding=5
+        ),
+        widget.TextBox(
+            text='|',
+            font="Ubuntu Mono",
+            background=colors[0],
+            foreground='474747',
+            padding=2,
+        ),
+    ]
+
+
+def systray():
+    return [
+        widget.Sep(
+            linewidth=0,
+            padding=6,
+            foreground=colors[0],
+            background=colors[0]
+        ),
+        widget.Systray(
+            background=colors[0],
+            padding=5
+        ),
+        widget.Sep(
+            linewidth=0,
+            padding=6,
+            foreground=colors[0],
+            background=colors[0]
+        ),
+    ]
+
+
+def powerLineWidget(widgetToRender, background, foreground, previous_color):
+    widgetToRender.background = background
+    widgetToRender.foreground = foreground
+    arrow_widget = widget.TextBox(
+        text=arrow,
+        # font="Ubuntu Mono",
+        background=previous_color,
+        foreground=background,
+        fontsize=28,
+        padding=-1,
+    )
+    return [
+        arrow_widget,
+        widgetToRender,
+    ]
+
+
+def powerLineWidgetsList(WidgetsList):
+    list = []
+    previous_color = colors[0]
+    for w in widgetsList:
+        list.extend(powerLineWidget(w,
+                    w.background, w.foreground, previous_color))
+        previous_color = w.background
+    return list
+
 
 screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.CurrentLayout(),
-                widget.GroupBox(),
-                widget.Prompt(),
-                widget.WindowName(),
-                widget.Chord(
-                    chords_colors={
-                        "launch": ("#ff0000", "#ffffff"),
-                    },
-                    name_transform=lambda name: name.upper(),
+                widget.Sep(
+                    linewidth=0,
+                    padding=6,
+                    foreground=colors[2],
+                    background=colors[0]
                 ),
-                # widget.TextBox("default config", name="default"),
-                # widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
-                # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
-                # widget.StatusNotifier(),
-                widget.Systray(),
-                # widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
-                widget.CPUGraph(),
-                widget.CheckUpdates(
-                    # distro='Debian_checkupdates',
-                    background='#6272a4',
-                    colour_have_updates='ffffff',
-                    colour_no_updates='ffffff',
-                    display_format='Updates: {updates}',
-                    distro="Debian",
-                    execute='tilix -e sudo nala upgrade',
-                    foreground='#8be9fd',
-                    no_update_string='None',
-                    padding=4,
-                    update_interval=60,),
-                widget.Clock(format="%H:%M"),
-                widget.QuickExit(),
+                widget.GroupBox(
+                    font="Ubuntu Bold",
+                    margin_y=3,
+                    margin_x=0,
+                    padding_y=5,
+                    padding_x=3,
+                    borderwidth=3,
+                    active=colors[2],
+                    inactive=colors[7],
+                    rounded=False,
+                    highlight_color=colors[1],
+                    highlight_method="line",
+                    this_current_screen_border=colors[6],
+                    this_screen_border=colors[4],
+                    other_current_screen_border=colors[6],
+                    other_screen_border=colors[4],
+                    foreground=colors[2],
+                    background=colors[0]
+                ),
+                *currentLayouts(),
+
+                widget.Prompt(
+                    foreground=colors[2],
+                    background=colors[0],
+                ),
+                widget.WindowName(
+                    foreground=colors[6],
+                    background=colors[0],
+                    padding=0
+                ),
+                *systray(),
+
+                *powerLineWidgetsList(widgetsList),
+
             ],
-            24,
-            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-            # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
-        ),
+            24),
+        # bottom=bar.Bar(
+        #     [
+        #         widget.Prompt(),
+        #         # widget.Chord(
+        #         #     width=bar.CALCULATED,
+        #         #     chords_colors={
+        #         #         "launch": ("#ff0000", "#ffffff"),
+        #         #     },
+        #         #     name_transform=lambda name: name.upper(),
+        #         # ),
+        #         # widget.TextBox("default config", name="default"),
+        #         # widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
+        #         # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
+        #         # widget.StatusNotifier(),
+        #         # widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
+        #         # PowerlineTextBox(update_interval=2, side='left'),
+        #         # Spacer(),
+        #         # PowerlineTextBox(update_interval=2, side='right'),
+        #         widget.CPUGraph(),
+        #         # widget.CheckUpdates(
+        #         #     background='#6272a4',
+        #         #     colour_have_updates='ffffff',
+        #         #     colour_no_updates='ffffff',
+        #         #     display_format='Updates: {updates}',
+        #         #     distro="Debian",
+        #         #     # execute='tilix -e sudo nala upgrade',
+        #         #     foreground='#8be9fd',
+        #         #     no_update_string='None',
+        #         #     padding=4,
+        #         #     update_interval=60,),
+        #         # widget.Clock(format="%H:%M"),
+
+        #         widget.QuickExit(),
+        #     ],
+        #     24,
+        #     # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
+        #     # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
+        # ),
     ),
 ]
+
 
 # Drag floating layouts.
 mouse = [
