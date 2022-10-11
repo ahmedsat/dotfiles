@@ -4,3 +4,5 @@ ln -sf $(pwd)/terminal ~/.config/terminal
 ln -sf $(pwd)/.bashrc ~/.bashrc
 ln -sf $(pwd)/fancyprompts ~/.config/fancyprompts
 ln -sf $(pwd)/qtile ~/.config/qtile
+ln -sf $(pwd)/fonts ~/.local/share/fonts
+

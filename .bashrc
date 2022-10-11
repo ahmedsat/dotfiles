@@ -13,7 +13,7 @@ esac
 HISTCONTROL=ignoreboth
 
 # append to the history file, don't overwrite it
-shopt -s histappend
+shopt -s
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
@@ -142,3 +142,8 @@ prompt-curl -b -D #-T AhmedSat
 # set CapsLock key to work as Ctrl
 /usr/bin/setxkbmap -option "ctrl:nocaps"
 
+# start fish 
+fish
+
+# start x sessetion
+# startx

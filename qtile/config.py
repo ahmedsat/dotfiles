@@ -8,17 +8,17 @@ from libqtile.config import Click, Drag, Group, KeyChord, Key, Match, Screen
 from libqtile.command import lazy
 from libqtile import layout, bar, widget, hook
 from libqtile.lazy import lazy
-# from powerline.bindings.qtile.widget import PowerlineTextBox
+from libqtile.utils import guess_terminal
 
 # mod keys
 mod = "mod4"
 alt = "mod1"
 shift = "shift"
 space = "space"
-control = "control"
+ctrl = "control"
 
 # terminal = guess_terminal()
-terminal = "tilix"
+terminal = "x-terminal-emulator"
 fileManger = "pcmanfm"
 
 keys = [
@@ -67,7 +67,9 @@ keys = [
 
     # my custom key bindings
     Key(["control", "shift"], "r", lazy.reload_config(), desc="Reload the config"),
-    Key([mod], "e", lazy.spawn(fileManger), desc="Lunch file manager"),
+    Key([ctrl], "e", lazy.spawn(fileManger), desc="Lunch file manager"),
+    Key([mod], "e", lazy.spawn("emacsclient -c"), desc="Lunch file manager"),
+
     Key([alt], "space", lazy.widget["keyboardlayout"].next_keyboard(),
         desc="Next keyboard layout."),
 ]
@@ -127,25 +129,25 @@ layouts = [
     # layout.RatioTile(),
     # layout.Tile(),
     # layout.TreeTab(),
-    # layout.TreeTab(
-    #     fontsize=10,
-    #     sections=["FIRST", "SECOND", "THIRD", "FOURTH"],
-    #     section_fontsize=10,
-    #     border_width=2,
-    #     bg_color="1c1f24",
-    #     active_bg="c678dd",
-    #     active_fg="000000",
-    #     inactive_bg="a9a1e1",
-    #     inactive_fg="1c1f24",
-    #     padding_left=0,
-    #     padding_x=0,
-    #     padding_y=5,
-    #     section_top=10,
-    #     section_bottom=20,
-    #     level_shift=8,
-    #     vspace=3,
-    #     panel_width=200
-    # ),
+     layout.TreeTab(
+         fontsize=10,
+         sections=["OPENED TAPS"],
+         section_fontsize=10,
+         border_width=2,
+         bg_color="1c1f24",
+         active_bg="c678dd",
+         active_fg="000000",
+         inactive_bg="a9a1e1",
+         inactive_fg="1c1f24",
+         padding_left=0,
+         padding_x=0,
+         padding_y=5,
+         section_top=10,
+         section_bottom=20,
+         level_shift=8,
+         vspace=3,
+         panel_width=150
+     ),
     # layout.VerticalTile(),
     # layout.Zoomy(),
 ]
@@ -252,17 +254,18 @@ def systray():
             linewidth=0,
             padding=6,
             foreground=colors[0],
-            background=colors[0]
+            background=colors[7]
         ),
         widget.Systray(
-            background=colors[0],
+            icon_size=500,
+            background=colors[1],
             padding=5
         ),
         widget.Sep(
             linewidth=0,
             padding=6,
             foreground=colors[0],
-            background=colors[0]
+            background=colors[7]
         ),
     ]
 
@@ -334,12 +337,12 @@ screens = [
                     background=colors[0],
                     padding=0
                 ),
-                *systray(),
+               *systray(),
 
-                *powerLineWidgetsList(widgetsList),
+              *powerLineWidgetsList(widgetsList),
 
             ],
-            24),
+            24, ),
         # bottom=bar.Bar(
         #     [
         #         widget.Prompt(),
@@ -428,3 +431,9 @@ wl_input_rules = None
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
 wmname = "LG3D"
+
+
+@hook.subscribe.startup_once
+def autostart():
+    home = os.path.expanduser('~/.config/qtile/autostart.sh')
+    subprocess.call([home])

@@ -1,0 +1,4 @@
+#! /bin/sh
+
+trogen --restore &
+killall x-terminal-emulator &

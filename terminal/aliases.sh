@@ -17,6 +17,8 @@ alias purge='sudo nala purge'
 alias remove='sudo nala remove'
 alias autopurge='sudo nala autopurge'
 
+alias emacs='emacsclient --create-frame --alternate-editor=""'
+
 alias reload='source ~/.bashrc' # reload .bashrc file
 
 alias lxde-restart='lxpanelctl restart && openbox --restart'

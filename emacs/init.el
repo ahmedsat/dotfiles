@@ -17,7 +17,7 @@
 (save-place-mode 1) ; remember and restore last cursor location of opent file
 (global-auto-revert-mode 1) ; Revert buffers when the underlying file has changed
 
-(load-theme 'modus-vivendi t) ; set color theme
+(load-theme 'dracula t) ; set color theme
 
 
 
