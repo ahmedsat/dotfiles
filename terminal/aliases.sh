@@ -21,4 +21,22 @@ alias emacs='emacsclient --create-frame --alternate-editor=""'
 
 alias reload='source ~/.bashrc' # reload .bashrc file
 
-alias lxde-restart='lxpanelctl restart && openbox --restart'
+
+alias x=startx
+
+
+alias c='clear'
+
+alias ls='ls --color=auto'
+alias la='ls -A'
+alias l='ls -CF'
+alias ll='ls -alF'
+
+alias r='fc -s'
+alias vi='vim'
+
+alias mv='mv -i'
+alias rm='rm -i'
+alias cp='cp -i'
+alias grep='grep --color=auto'
+alias ..='cd ..'
