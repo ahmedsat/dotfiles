@@ -12,6 +12,5 @@ ln:
 	ln -sf $(current_dir)/qtile				~/.config/qtile
 	ln -sf $(current_dir)/systemd			~/.config/systemd
 	ln -sf $(current_dir)/fonts				~/.local/share/fonts
-	ln -sf $(current_dir)/starship.toml  	~/.config/starship.toml
 non:
 	ln -sf $(pwd)/emacs ~/.emacs.d

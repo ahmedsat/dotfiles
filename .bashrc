@@ -1,4 +1,4 @@
-source ~/.config/terminal/aliases.sh
+source ~/dotfiles/terminal/aliases.sh
 
 shopt -s autocd
 
@@ -16,6 +16,9 @@ export LESS='-M'
 export CLICOLOR=1
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 export PATH
+
+export STARSHIP_CONFIG=~/dotfiles/starship.toml
+
 
 Black='\e[0;30m';
 Blue='\e[0;34m';
