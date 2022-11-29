@@ -1,9 +1,13 @@
 #!/bin/bash
-ln -sf $HOME/dotfiles/emacs		~/.config/emacs
-ln -sf $HOME/dotfiles/terminal		~/.config/terminal
-ln -sf $HOME/dotfiles/.bashrc		~/.bashrc
-ln -sf $HOME/dotfiles/.xprofile	~/.xprofile
-ln -sf $HOME/dotfiles/fancyprompts	~/.config/fancyprompts
-ln -sf $HOME/dotfiles/qtile		~/.config/qtile
-ln -sf $HOME/dotfiles/systemd		~/.config/systemd
-ln -sf $HOME/dotfile/fonts		~/.local/share/fonts
+
+SOURCE=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
+ln -sf $SOURCE/../emacs		~/.config/emacs
+ln -sf $SOURCE/../terminal		~/.config/terminal
+ln -sf $SOURCE/../.bashrc		~/.bashrc
+ln -sf $SOURCE/../.xprofile	~/.xprofile
+ln -sf $SOURCE/../fancyprompts	~/.config/fancyprompts
+ln -sf $SOURCE/../qtile		~/.config/qtile
+ln -sf $SOURCE/../systemd		~/.config/systemd
+ln -sf $SOURCE/../fonts         ~/.local/share/fonts
+ln -sf $SOURCE ~/.local/bin

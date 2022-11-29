@@ -37,3 +37,4 @@ PS1="$PS1"'\[\e[0m\]' # reset all
 
 # starsip prompt
 eval "$(starship init bash)"
+

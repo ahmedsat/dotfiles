@@ -2,3 +2,5 @@
 \#*\#
 emacs/eln-cache
 emacs/auto-save-list
+
+script/qtile
