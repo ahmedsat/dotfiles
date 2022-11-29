@@ -1,8 +1,9 @@
-ln -sf $(current_dir)/emacs				~/.config/emacs
-ln -sf $(current_dir)/terminal			~/.config/terminal
-ln -sf $(current_dir)/.bashrc			~/.bashrc
-ln -sf $(current_dir)/.xprofile			~/.xprofile
-ln -sf $(current_dir)/fancyprompts		~/.config/fancyprompts
-ln -sf $(current_dir)/qtile				~/.config/qtile
-ln -sf $(current_dir)/systemd			~/.config/systemd
-ln -sf $(current_dir)/fonts				~/.local/share/fonts
+#!/bin/bash
+ln -sf $HOME/dotfiles/emacs		~/.config/emacs
+ln -sf $HOME/dotfiles/terminal		~/.config/terminal
+ln -sf $HOME/dotfiles/.bashrc		~/.bashrc
+ln -sf $HOME/dotfiles/.xprofile	~/.xprofile
+ln -sf $HOME/dotfiles/fancyprompts	~/.config/fancyprompts
+ln -sf $HOME/dotfiles/qtile		~/.config/qtile
+ln -sf $HOME/dotfiles/systemd		~/.config/systemd
+ln -sf $HOME/dotfile/fonts		~/.local/share/fonts
