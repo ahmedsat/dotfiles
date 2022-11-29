@@ -45,6 +45,6 @@ alias ..='cd ..'
 # git aliases
 alias gs='git status'
 alias ga='git add'
-alias gaa='git add -u'
+alias gaa='git add --no-ignore-removal'
 alias gc='git commit -m'
 alias gp='git push'

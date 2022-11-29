@@ -5,8 +5,6 @@ SOURCE=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 ln -sf $SOURCE/../emacs		~/.config/emacs
 ln -sf $SOURCE/../terminal		~/.config/terminal
 ln -sf $SOURCE/../.bashrc		~/.bashrc
-ln -sf $SOURCE/../.xprofile	~/.xprofile
-ln -sf $SOURCE/../fancyprompts	~/.config/fancyprompts
 ln -sf $SOURCE/../qtile		~/.config/qtile
 ln -sf $SOURCE/../systemd		~/.config/systemd
 ln -sf $SOURCE/../fonts         ~/.local/share/fonts
