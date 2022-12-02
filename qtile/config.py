@@ -70,6 +70,8 @@ keys = [
     Key([ctrl], "e", lazy.spawn(fileManger), desc="Lunch file manager"),
     Key([mod], "e", lazy.spawn("emacsclient -c"), desc="Lunch file manager"),
 
+    # key([crtl,shift],"p", lazy.spawn("sudo systemctl poweroff"), desc="Shutdown PC"),
+
     Key([alt], "space", lazy.widget["keyboardlayout"].next_keyboard(),
         desc="Next keyboard layout."),
 ]
