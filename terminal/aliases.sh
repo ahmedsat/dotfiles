@@ -24,7 +24,6 @@ alias reload='source ~/.bashrc' # reload .bashrc file
 
 alias x=startx
 
-
 alias c='clear'
 
 alias ls='ls --color=auto'

@@ -18,6 +18,7 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 export PATH
 
 export STARSHIP_CONFIG=~/dotfiles/starship.toml
+export MESA_GL_VERSION_OVERRIDE=4.5
 
 
 Black='\e[0;30m';
@@ -38,3 +39,5 @@ PS1="$PS1"'\[\e[0m\]' # reset all
 # starsip prompt
 eval "$(starship init bash)"
 
+. "$HOME/.cargo/env"
+source /home/ahmedsat/.local/share/alacritty/extra/completions/alacritty.bash

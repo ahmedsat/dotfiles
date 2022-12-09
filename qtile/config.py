@@ -18,7 +18,7 @@ space = "space"
 ctrl = "control"
 
 # terminal = guess_terminal()
-terminal = "x-terminal-emulator"
+terminal = "alacritty"
 fileManger = "pcmanfm"
 
 keys = [
