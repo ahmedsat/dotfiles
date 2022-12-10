@@ -18,7 +18,9 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 export PATH
 
 export STARSHIP_CONFIG=~/dotfiles/starship.toml
-export MESA_GL_VERSION_OVERRIDE=4.5
+
+# export MESA_GL_VERSION_OVERRIDE=4.5
+export LIBGL_ALWAYS_SOFTWARE=1 # Fix error alacritty requires hardware supporting GLSL 3.30  
 
 
 Black='\e[0;30m';

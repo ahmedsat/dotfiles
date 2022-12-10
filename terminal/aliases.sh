@@ -47,3 +47,8 @@ alias ga='git add'
 alias gaa='git add --no-ignore-removal'
 alias gc='git commit -m'
 alias gp='git push'
+gu(){
+	git add --no-ignore-removal
+	git commit -m "$1"
+	git push
+}
