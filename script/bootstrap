@@ -2,10 +2,19 @@
 
 SOURCE=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
+
+
+rm -r ~/.config/emacs
+rm -r ~/.config/terminal
+rm -r ~/.bashrc
+rm -r ~/.config/qtile
+rm -r ~/.config/systemd
+rm -r ~/.local/share/fonts
+
 ln -sf $SOURCE/../emacs		~/.config/emacs
-ln -sf $SOURCE/../terminal		~/.config/terminal
-ln -sf $SOURCE/../.bashrc		~/.bashrc
+ln -sf $SOURCE/../terminal	~/.config/terminal
+ln -sf $SOURCE/../.bashrc	~/.bashrc
 ln -sf $SOURCE/../qtile		~/.config/qtile
-ln -sf $SOURCE/../systemd		~/.config/systemd
+ln -sf $SOURCE/../systemd	~/.config/systemd
 ln -sf $SOURCE/../fonts         ~/.local/share/fonts
-ln -sf $SOURCE ~/.local/bin
+# ln -sf $SOURCE			 ~/.local/bin

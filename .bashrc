@@ -42,4 +42,5 @@ PS1="$PS1"'\[\e[0m\]' # reset all
 eval "$(starship init bash)"
 
 . "$HOME/.cargo/env"
-source /home/ahmedsat/.local/share/alacritty/extra/completions/alacritty.bash
+source /home/ahmedsat/.local/share/alacritty/extra/completions/alacritty.bash 
+PATH=$PATH:/home/ahmedsat/dotfiles/script 
