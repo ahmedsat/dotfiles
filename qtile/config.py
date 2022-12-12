@@ -74,6 +74,8 @@ keys = [
 
     Key([alt], "space", lazy.widget["keyboardlayout"].next_keyboard(),
         desc="Next keyboard layout."),
+    # Take screenshot
+    Key([], "Print", lazy.spawn("flameshot gui")),
 ]
 
 
