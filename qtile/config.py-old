@@ -68,14 +68,14 @@ keys = [
     # my custom key bindings
     Key(["control", "shift"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([ctrl], "e", lazy.spawn(fileManger), desc="Lunch file manager"),
-    Key([mod], "e", lazy.spawn("emacsclient -c"), desc="Lunch emacs client"),
-    Key([mod], "m", lazy.spawn("emacs --with-profile=satmacs"), desc="Lunch emacs"),
+    Key([mod], "e", lazy.spawn("emacsclient -c"), desc="Lunch file manager"),
+    #  key([mod], "m", lezy.spawn("emacs --with-profile satmacs"), desc=""),
     # key([crtl,shift],"p", lazy.spawn("sudo systemctl poweroff"), desc="Shutdown PC"),
 
     Key([alt], "space", lazy.widget["keyboardlayout"].next_keyboard(),
         desc="Next keyboard layout."),
     # Take screenshot
-    Key([], "Print", lazy.spawn("flameshot gui")),
+    # Key([], "Print", lazy.spawn("flameshot gui")),
 ]
 
 
