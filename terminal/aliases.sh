@@ -35,7 +35,7 @@ alias r='fc -s'
 alias vi='vim'
 
 alias mv='mv -i'
-alias rm='rm -i'
+# alias rm='rm -i'
 alias cp='cp -i'
 alias grep='grep --color=auto'
 alias ..='cd ..'
