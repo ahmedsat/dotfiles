@@ -67,7 +67,7 @@ keys = [
 
     # my custom key bindings
     Key(["control", "shift"], "r", lazy.reload_config(), desc="Reload the config"),
-    Key([ctrl], "e", lazy.spawn(fileManger), desc="Lunch file manager"),
+    Key([ctrl], "f", lazy.spawn(fileManger), desc="Lunch file manager"),
     Key([mod], "e", lazy.spawn("emacsclient -c"), desc="Lunch emacs client"),
     Key([mod], "m", lazy.spawn("emacs --with-profile=satmacs"), desc="Lunch emacs"),
 
