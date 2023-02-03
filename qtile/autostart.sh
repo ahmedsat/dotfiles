@@ -2,3 +2,4 @@
 
 nitrogen --restore &
 killall x-terminal-emulator &
+picom &

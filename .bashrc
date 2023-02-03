@@ -44,3 +44,6 @@ eval "$(starship init bash)"
 . "$HOME/.cargo/env"
 source /home/ahmedsat/.local/share/alacritty/extra/completions/alacritty.bash 
 PATH=$PATH:/home/ahmedsat/dotfiles/script 
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+    exec startx
+fi

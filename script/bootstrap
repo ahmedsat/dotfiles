@@ -10,6 +10,7 @@ rm -r ~/.bashrc
 rm -r ~/.config/qtile
 rm -r ~/.config/systemd
 rm -r ~/.local/share/fonts
+rm -r ~/.config/alacritty
 
 ln -sf $SOURCE/../emacs		~/.config/emacs
 ln -sf $SOURCE/../terminal	~/.config/terminal
@@ -17,4 +18,5 @@ ln -sf $SOURCE/../.bashrc	~/.bashrc
 ln -sf $SOURCE/../qtile		~/.config/qtile
 ln -sf $SOURCE/../systemd	~/.config/systemd
 ln -sf $SOURCE/../fonts         ~/.local/share/fonts
+ln -sf $SOURCE/../alacritty ~/.config/alacritty
 # ln -sf $SOURCE			 ~/.local/bin
