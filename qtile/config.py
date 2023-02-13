@@ -134,25 +134,25 @@ layouts = [
     # layout.RatioTile(),
     # layout.Tile(),
     # layout.TreeTab(),
-     layout.TreeTab(
-         fontsize=10,
-         sections=["OPENED TAPS"],
-         section_fontsize=10,
-         border_width=2,
-         bg_color="1c1f24",
-        active_bg="c678dd",
-         active_fg="000000",
-         inactive_bg="a9a1e1",
-         inactive_fg="1c1f24",
-         padding_left=0,
-         padding_x=0,
-         padding_y=5,
-         section_top=10,
-         section_bottom=20,
-         level_shift=8,
-         vspace=3,
-         panel_width=150
-     ),
+    #  layout.TreeTab(
+    #      fontsize=10,
+    #      sections=["OPENED TAPS"],
+    #      section_fontsize=10,
+    #      border_width=2,
+    #      bg_color="1c1f24",
+    #     active_bg="c678dd",
+    #      active_fg="000000",
+    #      inactive_bg="a9a1e1",
+    #      inactive_fg="1c1f24",
+    #      padding_left=0,
+    #      padding_x=0,
+    #      padding_y=5,
+    #      section_top=10,
+    #      section_bottom=20,
+    #      level_shift=8,
+    #      vspace=3,
+    #      panel_width=150
+    #  ),
     # layout.VerticalTile(),
     # layout.Zoomy(),
     # layout.floating(),
@@ -178,7 +178,7 @@ widget_defaults = dict(
     # font="sans",
     # fontsize=12,
     # padding=3,
-    font="Ubuntu Bold",
+    font="Hack Bold",
     fontsize=10,
     # padding=2,
     background=colors[2]
@@ -199,7 +199,6 @@ widgetsList = [
         background=colors[3]
     ),
 
-
     widget.Volume(
         foreground=colors[1],
         background=colors[7],
@@ -211,6 +210,13 @@ widgetsList = [
         configured_keyboards=['us', 'ar'],
         foreground=colors[1],
         background=colors[8],
+    ),
+
+     widget.Systray(
+        icon_size=20,
+        foreground=colors[1],
+        padding=5,
+        background=colors[2]
     ),
 
     widget.Clock(
@@ -254,26 +260,26 @@ def currentLayouts():
     ]
 
 
-def systray():
-    return [
-        widget.Sep(
-            linewidth=0,
-            padding=6,
-            foreground=colors[0],
-            background=colors[7]
-        ),
-        widget.Systray(
-            icon_size=500,
-            background=colors[1],
-            padding=5
-        ),
-        widget.Sep(
-            linewidth=0,
-            padding=6,
-            foreground=colors[0],
-            background=colors[7]
-        ),
-    ]
+# def systray():
+#     return [
+#         widget.Sep(
+#             linewidth=0,
+#             padding=6,
+#             foreground=colors[0],
+#             background=colors[7]
+#         ),
+#         widget.Systray(
+#             icon_size=500,
+#             background=colors[1],
+#             padding=5
+#         ),
+#         widget.Sep(
+#             linewidth=0,
+#             padding=6,
+#             foreground=colors[0],
+#             background=colors[7]
+#         ),
+#     ]
 
 
 def powerLineWidget(widgetToRender, background, foreground, previous_color):
@@ -343,7 +349,7 @@ screens = [
                     background=colors[0],
                     padding=0
                 ),
-               *systray(),
+            #    *systray(),
 
               *powerLineWidgetsList(widgetsList),
 
