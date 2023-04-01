@@ -1,0 +1,14 @@
+alt + Return
+	$TERM
+
+Print
+	flameshot gui
+
+control + r ; {w,f,e,v} 
+	${BROWSER,FILE_MANAGER,VISUAL,TERM -e vim}
+
+super + c;{k}
+	{xdotool getactivewindow windowkill}
+
+super + p 
+	mpv $(xclip -o -selection clipboard)

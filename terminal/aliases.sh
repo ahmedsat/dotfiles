@@ -52,4 +52,7 @@ gu(){
 	git commit -m "$1"
 	git push
 }
+
 alias setdate='sudo ntpdate ntp.ubuntu.com'
+
+alias :wq=exit

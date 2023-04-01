@@ -10,11 +10,15 @@ shopt -s autocd
 export NVM_DIR="$HOME/.nvm"
 export EDITOR=vim
 export HISTCONTROL=ignoreboth
-export TERM=xterm-256color
-export VISUAL=vim
+export TERM=alacritty
+export VISUAL=code
+export BROWSER=qutebrowser
+export FILE_MANAGER=pcmanfm
 export LESS='-M'
 export CLICOLOR=1
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+PATH=/usr/local/bin:/usr/bin/:/bin:/usr/local/games/usr/games/:$HOME/.local/bin:$HOME/.local/go/bin/
 export PATH
 
 export STARSHIP_CONFIG=~/dotfiles/starship.toml
@@ -31,19 +35,15 @@ Red='\e[0;31m';
 Purple='\e[0;35m';
 Brown='\e[0;33m';
 
-LAMDA='λ  '
-
-ENDCOLOR="\e[0m"
-PS1="$Green \w $LAMDA $ENDCOLOR"
-
-PS1="$PS1"'\[\e[0m\]' # reset all
 
 # starsip prompt
 eval "$(starship init bash)"
 
 . "$HOME/.cargo/env"
 source /home/ahmedsat/.local/share/alacritty/extra/completions/alacritty.bash 
+
 PATH=$PATH:/home/ahmedsat/dotfiles/script 
+
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
     exec startx
 fi

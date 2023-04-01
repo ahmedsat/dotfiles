@@ -17,6 +17,11 @@ shift = "shift"
 space = "space"
 ctrl = "control"
 
+if qtile.core.name == "x11":
+    mod = "mod4"
+elif qtile.core.name == "wayland":
+    mod = "mod1"
+
 # terminal = guess_terminal()
 terminal = "alacritty"
 fileManger = "pcmanfm"
@@ -61,7 +66,7 @@ keys = [
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
-    Key([mod], "c", lazy.window.kill(), desc="Kill focused window"),
+    # Key([mod], "c", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 
@@ -75,8 +80,6 @@ keys = [
 
     Key([alt], "space", lazy.widget["keyboardlayout"].next_keyboard(),
         desc="Next keyboard layout."),
-    # Take screenshot
-    Key([], "Print", lazy.spawn("flameshot gui")),
 ]
 
 

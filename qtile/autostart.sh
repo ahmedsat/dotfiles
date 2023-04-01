@@ -1,6 +1,7 @@
 #!/usr/bin/env bash 
 
 # nitrogen --restore &
+sxhkd &
 picom &
 conky -c $HOME/.config/conky/conkyrc
 volumeicon &
