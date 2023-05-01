@@ -1,0 +1,10 @@
+#!/bin/env bash
+
+clip(){ 
+	go-clip -a "/tmp/queue.sock" $* 
+}
+
+mpv $(clip get-bottom) &
+status=$!
+wait $status
+clip remove-bottom

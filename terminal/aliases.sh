@@ -53,6 +53,12 @@ gu(){
 	git push
 }
 
+copy(){
+	echo $1 | xclip -i -selection clipboard
+}
+
 alias setdate='sudo ntpdate ntp.ubuntu.com'
 
 alias :wq=exit
+
+alias dc='pwd | xclip -i'

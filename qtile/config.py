@@ -66,15 +66,15 @@ keys = [
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
-    # Key([mod], "c", lazy.window.kill(), desc="Kill focused window"),
+    Key([mod], "c", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 
     # my custom key bindings
     Key(["control", "shift"], "r", lazy.reload_config(), desc="Reload the config"),
-    Key([ctrl], "f", lazy.spawn(fileManger), desc="Lunch file manager"),
-    Key([mod], "e", lazy.spawn("emacsclient -c"), desc="Lunch emacs client"),
-    Key([mod], "m", lazy.spawn("emacs --with-profile=satmacs"), desc="Lunch emacs"),
+    # Key([ctrl], "f", lazy.spawn(fileManger), desc="Lunch file manager"),
+    # Key([mod], "e", lazy.spawn("emacsclient -c"), desc="Lunch emacs client"),
+    # Key([mod], "m", lazy.spawn("emacs --with-profile=satmacs"), desc="Lunch emacs"),
 
     # key([crtl,shift],"p", lazy.spawn("sudo systemctl poweroff"), desc="Shutdown PC"),
 

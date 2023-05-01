@@ -4,11 +4,22 @@ alt + Return
 Print
 	flameshot gui
 
-control + r ; {w,f,e,v} 
-	${BROWSER,FILE_MANAGER,VISUAL,TERM -e vim}
+control + r ; {w,f,v,e,o} 
+	${BROWSER,FILE_MANAGER,VISUAL,TERM -e $EDITOR,VISUAL $(xclip -o)}
 
-super + c;{k}
-	{xdotool getactivewindow windowkill}
+super + p ; {m,v,p}
+	mpv {--no-audio,--no-video, } $(xclip -o -selection clipboard)
 
-super + p 
-	mpv $(xclip -o -selection clipboard)
+super + p ; k 
+	pkill mpv
+
+super + b ; {h}
+	{restart-sxhkd}
+
+# video watch queue
+control + q ;{a,A}
+	go-clip -a "/tmp/queue.sock" {add-top,add-bottom} $(xclip -o -selection clipboard)
+
+control + q ; w
+	{watch-queue}
+

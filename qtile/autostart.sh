@@ -1,6 +1,10 @@
 #!/usr/bin/env bash 
 
 # nitrogen --restore &
+
+go-clip serve &
+go-clip serve -a "/tmp/queue.sock" &
+
 sxhkd &
 picom &
 conky -c $HOME/.config/conky/conkyrc
