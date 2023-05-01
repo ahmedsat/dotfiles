@@ -4,7 +4,7 @@ import re
 import socket
 import subprocess
 from libqtile import qtile
-from libqtile.config import Click, Drag, Group, KeyChord, Key, Match, Screen
+from libqtile.config import Click, Drag, Group, KeyChord, Key, Match, Screen,ScratchPad,DropDown
 from libqtile.command import lazy
 from libqtile import layout, bar, widget, hook
 from libqtile.lazy import lazy
@@ -57,13 +57,13 @@ keys = [
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
     # multiple stack panes
-    Key(
-        [mod, "shift"],
-        "Return",
-        lazy.layout.toggle_split(),
-        desc="Toggle between split and unsplit sides of stack",
-    ),
-    Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
+    #Key(
+    #    [mod, "shift"],
+    #    "Return",
+    #    lazy.layout.toggle_split(),
+    #    desc="Toggle between split and unsplit sides of stack",
+    #),
+    Key([mod, shift], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "c", lazy.window.kill(), desc="Kill focused window"),
@@ -80,6 +80,8 @@ keys = [
 
     Key([alt], "space", lazy.widget["keyboardlayout"].next_keyboard(),
         desc="Next keyboard layout."),
+    #=-/ Scratchpads /-=#
+    Key([mod], "Return", lazy.group['scratchpad'].dropdown_toggle('term')),
 ]
 
 
@@ -89,6 +91,16 @@ groups = [
     Group("SYS"),
     Group("FILE"),
     Group("OTHER"),
+    ScratchPad(
+        "scratchpad",
+        [DropDown(
+            "term", 
+            terminal, 
+            x=0.05, 
+            y=0.02, 
+            width=0.8, 
+            height=0.8, 
+            on_focus_lost_hide=False)]),
 ]
 
 groups_keys = {
