@@ -2,6 +2,8 @@
 
 # nitrogen --restore &
 
+sleep 1
+
 go-clip serve &
 go-clip serve -a "/tmp/queue.sock" &
 
