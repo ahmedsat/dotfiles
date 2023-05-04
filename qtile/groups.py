@@ -15,21 +15,21 @@ groups = [
             DropDown(
             "term", 
             terminal + " -t terminal", 
-            opacity=0.8,
+            opacity=1.0,
             x=0.05, 
             y=0.05, 
             width=0.9, 
             height=0.9, 
-            on_focus_lost_hide=True),
+            on_focus_lost_hide=False),
             DropDown(
             "debug", 
             terminal + " -t debug", 
-            opacity=0.8,
+            opacity=1.0,
             x=0.05, 
             y=0.05, 
             width=0.9, 
             height=0.9, 
-            on_focus_lost_hide=True),
+            on_focus_lost_hide=False),
         ]),
 ]
 

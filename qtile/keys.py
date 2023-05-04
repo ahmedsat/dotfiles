@@ -3,76 +3,10 @@ from libqtile.lazy import lazy
 from vars import *
 
 terminalKeys = [
-    Key([], "Return", lazy.group["scratchpad"].dropdown_toggle("term")),
-    Key([], "t", lazy.spawn(terminal), desc="Launch terminal"),
-    Key([mod, shift], "g", lazy.group["scratchpad"].dropdown_toggle("debug")),
+    Key([], "t", lazy.group["scratchpad"].dropdown_toggle("term"), desc="Toggle main scratchpad"),
+    Key([], "d", lazy.group["scratchpad"].dropdown_toggle("debug"), desc="Toggle debug scratchpad"),
 ]
 
-emacsKeys = [
-    Key([], "e", lazy.spawn("emacsclient -c -a 'emacs'"), desc="Emacsclient Dashboard"),
-    Key(
-        [],
-        "a",
-        lazy.spawn(
-            "emacsclient -c -a 'emacs' --eval '(emms)' --eval '(emms-play-directory-tree \"~/Music/\")'"
-        ),
-        desc="Emacsclient EMMS (music)",
-    ),
-    Key(
-        [],
-        "b",
-        lazy.spawn("emacsclient -c -a 'emacs' --eval '(ibuffer)'"),
-        desc="Emacsclient Ibuffer",
-    ),
-    Key(
-        [],
-        "d",
-        lazy.spawn("emacsclient -c -a 'emacs' --eval '(dired nil)'"),
-        desc="Emacsclient Dired",
-    ),
-    Key(
-        [],
-        "i",
-        lazy.spawn("emacsclient -c -a 'emacs' --eval '(erc)'"),
-        desc="Emacsclient ERC (IRC)",
-    ),
-    Key(
-        [],
-        "n",
-        lazy.spawn("emacsclient -c -a 'emacs' --eval '(elfeed)'"),
-        desc="Emacsclient Elfeed (RSS)",
-    ),
-    Key(
-        [],
-        "s",
-        lazy.spawn("emacsclient -c -a 'emacs' --eval '(eshell)'"),
-        desc="Emacsclient Eshell",
-    ),
-    Key(
-        [],
-        "v",
-        lazy.spawn("emacsclient -c -a 'emacs' --eval '(+vterm/here nil)'"),
-        desc="Emacsclient Vterm",
-    ),
-    Key(
-        [],
-        "w",
-        lazy.spawn(
-            "emacsclient -c -a 'emacs' --eval '(doom/window-maximize-buffer(eww \"distro.tube\"))'"
-        ),
-        desc="Emacsclient EWW Browser",
-    ),
-]
-
-systemKeys = [
-    Key(
-        [],
-        "w",
-        lazy.spawn(
-            "find $HOME/dotfiles/wallpaper/ -type f | shuf -n 1 | xargs xwallpaper --zoom"
-        ),
-    ),
-]
 
 keys = [
     # Switch between windows
@@ -121,8 +55,9 @@ keys = [
         lazy.widget["keyboardlayout"].next_keyboard(),
         desc="Next keyboard layout.",
     ),
-    KeyChord([mod], "Return", terminalKeys),
-    # Emacs programs launched using the key chord CTRL+e followed by 'key'
-    # KeyChord([mod], "e", emacsKeys),
-    # KeyChord([ctrl,shift], "s", systemKeys),
+
+    # terminal keys
+    Key([mod], "Return",lazy.spawn(terminal),desc="Launch terminal"),
+    KeyChord([mod], "t", terminalKeys),
+
 ]
