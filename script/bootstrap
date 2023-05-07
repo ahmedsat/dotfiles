@@ -14,6 +14,8 @@ rm -r ~/.local/share/fonts
 rm -r ~/.config/alacritty
 rm -r ~/.config/go
 rm -r ~/.config/sxhkd
+rm -r ~/.config/conky
+
 
 ln -sf $SOURCE/../emacs		~/.config/emacs
 ln -sf $SOURCE/../terminal	~/.config/terminal
@@ -25,4 +27,5 @@ ln -sf $SOURCE/../fonts         ~/.local/share/fonts
 ln -sf $SOURCE/../alacritty	~/.config/alacritty
 ln -sf $SOURCE/../go 		~/.config/go
 ln -sf $SOURCE/../sxhkd		~/.config/sxhkd
+ln -sf $SOURCE/../conky		~/.config/conky
 # ln -sf $SOURCE		~/.local/bin

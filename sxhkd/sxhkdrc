@@ -32,3 +32,8 @@ super + e ;{b,d,s}
 	emacsclient -c -a 'emacs' --eval '({,ibuffer,dired nil,eshell})'
 super + e ;{e}
 	emacsclient -c -a 'emacs'
+
+
+# mouse buttons
+super + m;{1,2,3}
+	sleep 1 && xdotool click {1,2,3}
