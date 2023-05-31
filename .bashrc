@@ -39,9 +39,9 @@ Brown='\e[0;33m';
 # starsip prompt
 eval "$(starship init bash)"
 
-. "$HOME/.cargo/env"
-source /home/ahmedsat/.local/share/alacritty/extra/completions/alacritty.bash 
-#source /home/ahmedsat/.local/share/go-clip/completions/go-clip.bash 
+# . "$HOME/.cargo/env"
+
+# source /home/ahmedsat/.local/share/alacritty/extra/completions/alacritty.bash 
 
 PATH=$PATH:/home/ahmedsat/dotfiles/script 
 

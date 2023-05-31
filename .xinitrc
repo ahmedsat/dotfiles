@@ -7,4 +7,10 @@
 # invoke global X session script
 . /etc/X11/Xsession &
 
-exec qtile start
+# exec qtile start
+
+# dwm
+
+while :; do
+	ssh-agent dwm
+done

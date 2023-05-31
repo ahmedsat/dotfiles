@@ -1,4 +1,5 @@
 if [[ $(echo $DISPLAY) = ":0" ]]; then 
-exec ~/.local/bin/qtile start 
+# exec ~/.local/bin/qtile start 
+dwm
 fi
 alacritty
