@@ -1,3 +1,4 @@
-(("doom" . ((user-emacs-directory . "~/.local/share/emacs/doom")))
-;; ("test" . ((user-emacs-directory . "~/.local/share/emacs/test")))
- ("satmacs" . ((user-emacs-directory . "~/.local/share/emacs/satmacs"))))
+(("doom" 	.	((user-emacs-directory		. 	"~/.local/emacs/doom"		)))
+ ("sat"		.	((user-emacs-directory		.	"~/.local/emacs/sat"		)))
+ ("spacemacs" 	.	((user-emacs-directory 		. 	"~/.local/emacs/spacemacs"	)))
+ ("prelude" 	.	((user-emacs-directory 		. 	"~/.local/emacs/prelude"	))))
