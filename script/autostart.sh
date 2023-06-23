@@ -5,10 +5,10 @@
 # go-clip serve &
 # go-clip serve -a "/tmp/queue.sock" &
 
-sxhkd &
+# sxhkd &
 # picom &
-conky -c $HOME/.config/conky/conkyrc
-conky -c $HOME/.config/conky/tasklist.conf
+# conky -c $HOME/.config/conky/conkyrc
+# conky -c $HOME/.config/conky/tasklist.conf
 volumeicon &
 find $HOME/dotfiles/wallpaper/ -type f | shuf -n 1 | xargs xwallpaper --zoom &
 

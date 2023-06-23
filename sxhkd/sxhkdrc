@@ -13,8 +13,8 @@ super + p ; {m,v,p}
 super + p ; k 
 	pkill mpv
 
-super + b ; {h}
-	{restart-sxhkd}
+#super + b ; {h}
+#	{restart-sxhkd}
 
 # # video watch queue
 # control + q ;{a,A}

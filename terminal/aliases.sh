@@ -57,8 +57,16 @@ copy(){
 	echo $1 | xclip -i -selection clipboard
 }
 
+dwmDate(){
+	while true ; do now | xargs xsetroot -name ; sleep 1 ; done
+}
+
 alias setdate='sudo ntpdate ntp.ubuntu.com'
 
 alias :wq=exit
 
 alias dc='pwd | xclip -i'
+
+now(){
+	date +'%Y/%m/%d-%H:%M:%S'
+}

@@ -18,7 +18,7 @@ export LESS='-M'
 export CLICOLOR=1
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-PATH=/usr/local/bin:/usr/bin/:/bin:/usr/local/games/usr/games/:$HOME/.local/bin:$HOME/.local/go/bin/:$HOME/dotfiles/script
+PATH=/usr/local/bin:/usr/bin/:/bin:/usr/local/games/usr/games/:$HOME/.local/bin:$HOME/.local/go/bin/:$HOME/dotfiles/script:$HOME/.local/fultter/flutter/bin
 export PATH
 
 export STARSHIP_CONFIG=~/dotfiles/starship.toml

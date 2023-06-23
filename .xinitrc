@@ -7,9 +7,14 @@
 # invoke global X session script
 . /etc/X11/Xsession &
 
-# exec qtile start
 
-# dwm
+autostart.sh
+
+# make sure flutter work with linux
+export CPLUS_INCLUDE_PATH="${CPLUS_INCLUDE_PATH:+${CPLUS_INCLUDE_PATH}:}/usr/include/c++/12/"
+export CPLUS_INCLUDE_PATH="${CPLUS_INCLUDE_PATH:+${CPLUS_INCLUDE_PATH}:}/usr/include/x86_64-linux-gnu/c++/12/"
+export CMAKE_INSTALL_PREFIX="$HOME/.local/camke/"
+
 
 while :; do
 	ssh-agent dwm
