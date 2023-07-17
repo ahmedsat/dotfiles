@@ -5,6 +5,8 @@ from vars import *
 terminalKeys = [
     Key([], "t", lazy.group["scratchpad"].dropdown_toggle("term"), desc="Toggle main scratchpad"),
     Key([], "d", lazy.group["scratchpad"].dropdown_toggle("debug"), desc="Toggle debug scratchpad"),
+    Key([], "l", lazy.group["scratchpad"].dropdown_toggle("log"), desc="Toggle log scratchpad"),
+
 ]
 
 
@@ -41,7 +43,7 @@ keys = [
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "c", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+    Key([mod], "r", lazy.spawn("dmenu_run"), desc="Spawn a dmenu"),
     # my custom key bindings
     Key(["control", "shift"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control", "shift"], "r", lazy.restart(), desc="Restart qtile"),

@@ -30,6 +30,15 @@ groups = [
             width=0.9, 
             height=0.9, 
             on_focus_lost_hide=False),
+            DropDown(
+            "log", 
+            terminal + " -t log", 
+            opacity=1.0,
+            x=0.05, 
+            y=0.05, 
+            width=0.9, 
+            height=0.9, 
+            on_focus_lost_hide=False),
         ]),
 ]
 

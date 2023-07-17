@@ -48,3 +48,6 @@ PATH=$PATH:/home/ahmedsat/dotfiles/script
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
     exec startx
 fi
+
+# If running from tty1 start sway
+# [ "$(tty)" = "/dev/tty2" ] && exec sway
