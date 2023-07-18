@@ -60,6 +60,7 @@ keys = [
 
     # terminal keys
     Key([mod], "Return",lazy.spawn(terminal),desc="Launch terminal"),
+    Key([mod], "b",lazy.hide_show_bar("top")),
     KeyChord([mod], "t", terminalKeys),
 
 ]
