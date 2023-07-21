@@ -9,7 +9,6 @@ terminalKeys = [
 
 ]
 
-
 keys = [
     # Switch between windows
     Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
@@ -43,7 +42,6 @@ keys = [
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "c", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    Key([mod], "r", lazy.spawn("dmenu_run"), desc="Spawn a dmenu"),
     # my custom key bindings
     Key(["control", "shift"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control", "shift"], "r", lazy.restart(), desc="Restart qtile"),
@@ -58,9 +56,13 @@ keys = [
         desc="Next keyboard layout.",
     ),
 
+    Key([mod], "b",lazy.hide_show_bar("top")),
+
+    Key([mod], "r", lazy.spawn("dmenu_run"), desc="Spawn a dmenu"),
+
+
     # terminal keys
     Key([mod], "Return",lazy.spawn(terminal),desc="Launch terminal"),
-    Key([mod], "b",lazy.hide_show_bar("top")),
     KeyChord([mod], "t", terminalKeys),
 
 ]
