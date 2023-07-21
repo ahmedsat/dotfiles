@@ -1,0 +1,13 @@
+#!/bin/sh
+
+
+
+
+options=(
+"google - https://google.com"
+"suckless - https://suckless.org"
+)
+
+choice=options[@] | dmenu -i -l 20 -g 1 -p "Bookmarks"
+
+echo $choice

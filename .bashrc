@@ -18,10 +18,13 @@ export LESS='-M'
 export CLICOLOR=1
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-PATH=/usr/local/bin:/usr/bin/:/bin:/usr/local/games/usr/games/:$HOME/.local/bin:$HOME/.local/go/bin/:$HOME/dotfiles/script:$HOME/.local/fultter/flutter/bin
+DOTFILES_PATH=$HOME/dotfiles
+
+PATH=/usr/local/bin:/usr/bin/:/bin:/usr/local/games/usr/games/:$HOME/.local/bin:$HOME/.local/go/bin/:$HOME/.local/fultter/flutter/bin
+PATH=$PATH:$DOTFILES_PATH/script:$DOTFILES_PATH/script/dmenu-script
 export PATH
 
-export STARSHIP_CONFIG=~/dotfiles/starship.toml
+export STARSHIP_CONFIG=$DOTFILES_PATH/starship.toml
 
 # export MESA_GL_VERSION_OVERRIDE=4.5
 export LIBGL_ALWAYS_SOFTWARE=1 # Fix error alacritty requires hardware supporting GLSL 3.30  
@@ -39,15 +42,7 @@ Brown='\e[0;33m';
 # starsip prompt
 eval "$(starship init bash)"
 
-# . "$HOME/.cargo/env"
-
-# source /home/ahmedsat/.local/share/alacritty/extra/completions/alacritty.bash 
-
-PATH=$PATH:/home/ahmedsat/dotfiles/script 
-
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
     exec startx
 fi
 
-# If running from tty1 start sway
-# [ "$(tty)" = "/dev/tty2" ] && exec sway

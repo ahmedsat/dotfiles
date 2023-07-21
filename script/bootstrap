@@ -2,22 +2,36 @@
 
 SOURCE=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
+DIRS=( 
+	~/.config/emacs 
+	~/.config/terminal 
+	~/.config/qtile 
+	~/.config/systemd 
+	~/.local/share/fonts 
+	~/.config/alacritty 
+	~/.config/go 
+	~/.config/sxhkd 
+	~/.config/conky 
+	~/.local/emacs
+	~/.local/scripts
+)
+
+FILES=(
+	~/.bashrc 
+	~/.xinitrc 
+	~/.emacs-profile
+	~/.emacs-profiles.el
+)
 
 
-rm -r ~/.config/emacs
-rm -r ~/.config/terminal
-rm -r ~/.bashrc
-rm -r ~/.xinitrc
-rm -r ~/.config/qtile
-rm -r ~/.config/systemd
-rm -r ~/.local/share/fonts
-rm -r ~/.config/alacritty
-rm -r ~/.config/go
-rm -r ~/.config/sxhkd
-rm -r ~/.config/conky
-rm -r ~/.emacs-profile
-rm -r ~/.emacs-profiles.el
-rm -r ~/.local/emacs
+for DIR in ${DIRS[@]};do
+	rm -rf $DIR
+done
+
+for FILE in ${FILES[@]};do
+	rm -f $FILE
+done
+
 
 ln -sf $SOURCE/../emacs			~/.config/emacs
 ln -sf $SOURCE/../terminal		~/.config/terminal
@@ -33,4 +47,5 @@ ln -sf $SOURCE/../conky			~/.config/conky
 ln -sf $SOURCE/../emacs-profiles.el	~/.emacs-profiles.el
 ln -sf $SOURCE/../emacs-profile		~/.emacs-profile
 ln -sf $SOURCE/../emacs-profiles	~/.local/emacs
-# ln -sf $SOURCE		~/.local/bin
+ln -sf $SOURCE				~/.local/scripts
+
