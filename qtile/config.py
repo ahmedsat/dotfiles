@@ -37,10 +37,11 @@ widgetsList = [
         background=colors[3]
     ),
 
-    widget.Volume(
+    widget.HDDBusyGraph(
         foreground=colors[1],
+        fill_color=colors[1],
         background=colors[7],
-        fmt='Vol: {}',
+        # fmt='Vol: {}',
         # emoji=True,
         padding=5,
     ),
@@ -131,12 +132,7 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.Sep(
-                    linewidth=0,
-                    padding=6,
-                    foreground=colors[2],
-                    background=colors[0]
-                ),
+
                 widget.GroupBox(
                     font="Ubuntu Bold",
                     margin_y=3,
@@ -156,6 +152,7 @@ screens = [
                     foreground=colors[2],
                     background=colors[0]
                 ),
+                
                 *currentLayouts(),
 
                 widget.Prompt(
@@ -169,8 +166,41 @@ screens = [
                 ),
               *powerLineWidgetsList(widgetsList),
             ],
-            24, ),
+            24, 
+        ),
         
+       # bottom=bar.Bar(
+       #     [
+
+
+       #         widget.Spacer(
+       #             background=colors[0],
+       #         ),
+       #         widget.LaunchBar(
+
+       #             default_icon='/usr/share/icons/Adwaita/256x256/mimetypes/x-package-repository.png',
+
+       #            progs=[
+       #                 # ('pcmanfm','pcmanfm','pcmanfm'),
+       #             ],
+
+
+       #             background=colors[0],
+       #         ),
+
+       #         widget.Prompt(
+       #             foreground=colors[2],
+       #             background=colors[0],
+       #         ),
+
+       #         widget.Spacer(
+       #             background=colors[0],
+       #         ),
+
+       #     ],
+       #     24, 
+       # ),
+
     ),
 ]
 
@@ -196,6 +226,7 @@ floating_layout = layout.Floating(
         Match(wm_class="confirmreset"),  # gitk
         Match(wm_class="makebranch"),  # gitk
         Match(wm_class="maketag"),  # gitk
+        Match(wm_class="app"),  # testing app
         Match(wm_class="ssh-askpass"),  # ssh-askpass
         Match(title="branchdialog"),  # gitk
         Match(title="pinentry"),  # GPG key password entry
