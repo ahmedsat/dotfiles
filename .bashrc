@@ -43,6 +43,10 @@ Brown='\e[0;33m';
 eval "$(starship init bash)"
 
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-    exec startx
+
+	setdate
+    
+	exec startx
+
 fi
 
