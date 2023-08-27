@@ -32,7 +32,7 @@ widgetsList = [
         colour_have_updates=colors[1],
         colour_no_updates=colors[1],
         mouse_callbacks={'Button1': lambda: qtile.cmd_spawn(
-            terminal + ' -e sudo nala upgrade')},
+            terminal + ' -e nala upgrade')},
         padding=5,
         background=colors[3]
     ),
@@ -41,8 +41,6 @@ widgetsList = [
         foreground=colors[1],
         fill_color=colors[1],
         background=colors[7],
-        # fmt='Vol: {}',
-        # emoji=True,
         padding=5,
     ),
     widget.KeyboardLayout(
@@ -106,7 +104,6 @@ def powerLineWidget(widgetToRender, background, foreground, previous_color):
     widgetToRender.foreground = foreground
     arrow_widget = widget.TextBox(
         text=arrow,
-        # font="Ubuntu Mono",
         background=previous_color,
         foreground=background,
         fontsize=28,
@@ -169,38 +166,6 @@ screens = [
             24, 
         ),
         
-       # bottom=bar.Bar(
-       #     [
-
-
-       #         widget.Spacer(
-       #             background=colors[0],
-       #         ),
-       #         widget.LaunchBar(
-
-       #             default_icon='/usr/share/icons/Adwaita/256x256/mimetypes/x-package-repository.png',
-
-       #            progs=[
-       #                 # ('pcmanfm','pcmanfm','pcmanfm'),
-       #             ],
-
-
-       #             background=colors[0],
-       #         ),
-
-       #         widget.Prompt(
-       #             foreground=colors[2],
-       #             background=colors[0],
-       #         ),
-
-       #         widget.Spacer(
-       #             background=colors[0],
-       #         ),
-
-       #     ],
-       #     24, 
-       # ),
-
     ),
 ]
 

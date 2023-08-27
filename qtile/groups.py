@@ -32,7 +32,7 @@ groups = [
             on_focus_lost_hide=False),
             DropDown(
             "log", 
-            terminal + " -t log", 
+            terminal + " -t log -e gotop", 
             opacity=1.0,
             x=0.05, 
             y=0.05, 
@@ -61,16 +61,20 @@ for k, g in groups_keys.items():
                 desc="Switch to group {}".format(g.name),
             ),
             # mod1 + shift + letter of group = switch to & move focused window to group
-            Key(
-                [mod, "shift"],
-                k,
-                lazy.window.togroup(g.name, switch_group=True),
-                desc="Switch to & move focused window to group {}".format(
-                    g.name),
-            ),
+            #Key(
+            #    [mod, "shift"],
+            #    k,
+            #    lazy.window.togroup(g.name, switch_group=True),
+            #    desc="Switch to & move focused window to group {}".format(
+            #        g.name),
+            #),
             # Or, use below if you prefer not to switch to that group.
             # # mod1 + shift + letter of group = move focused window to group
-            # Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
-            #     desc="move focused window to group {}".format(i.name)),
+             Key(
+                 [mod, "shift"], 
+                 k, 
+                 lazy.window.togroup(g.name),
+                 desc="move focused window to group {}".format(g.name),
+            ),
         ]
     )
