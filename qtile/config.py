@@ -32,7 +32,7 @@ widgetsList = [
         colour_have_updates=colors[1],
         colour_no_updates=colors[1],
         mouse_callbacks={'Button1': lambda: qtile.cmd_spawn(
-            terminal + ' -e nala upgrade')},
+            terminal + ' -e doas nala upgrade')},
         padding=5,
         background=colors[3]
     ),
@@ -193,6 +193,7 @@ floating_layout = layout.Floating(
         Match(wm_class="maketag"),  # gitk
         Match(wm_class="app"),  # testing app
         Match(wm_class="Test"),  # testing app
+        Match(wm_class="LearnOpenGL"),  # testing app
         Match(wm_class="ssh-askpass"),  # ssh-askpass
         Match(title="branchdialog"),  # gitk
         Match(title="pinentry"),  # GPG key password entry
