@@ -13,4 +13,7 @@ export CPLUS_INCLUDE_PATH="${CPLUS_INCLUDE_PATH:+${CPLUS_INCLUDE_PATH}:}/usr/inc
 export CPLUS_INCLUDE_PATH="${CPLUS_INCLUDE_PATH:+${CPLUS_INCLUDE_PATH}:}/usr/include/x86_64-linux-gnu/c++/12/"
 export CMAKE_INSTALL_PREFIX="$HOME/.local/camke/"
 
+# set CapsLock key to work as Ctrl
+/usr/bin/setxkbmap -option "ctrl:nocaps"
+
 exec qtile start

@@ -32,7 +32,7 @@ groups = [
             on_focus_lost_hide=False),
             DropDown(
             "log", 
-            terminal + " -t log -e gotop", 
+            terminal + " -t log -e htop", 
             opacity=1.0,
             x=0.05, 
             y=0.05, 

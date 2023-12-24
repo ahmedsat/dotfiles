@@ -19,8 +19,6 @@ DIRS=(
 FILES=(
 	~/.bashrc 
 	~/.xinitrc 
-	~/.emacs-profile
-	~/.emacs-profiles.el
 )
 
 
@@ -44,8 +42,6 @@ ln -sf $SOURCE/../alacritty		~/.config/alacritty
 ln -sf $SOURCE/../go 			~/.config/go
 ln -sf $SOURCE/../sxhkd			~/.config/sxhkd
 ln -sf $SOURCE/../conky			~/.config/conky
-ln -sf $SOURCE/../emacs-profiles.el	~/.emacs-profiles.el
-ln -sf $SOURCE/../emacs-profile		~/.emacs-profile
 ln -sf $SOURCE/../emacs-profiles	~/.local/emacs
 ln -sf $SOURCE				~/.local/scripts
 

@@ -25,16 +25,27 @@ extension_defaults = widget_defaults.copy()
 
 widgetsList = [
     widget.CheckUpdates(
-        update_interval=1800,
+        update_interval=60,
         distro="Debian",
         display_format="Updates: {updates} ",
+        no_update_string='No updates',
         foreground=colors[1],
         colour_have_updates=colors[1],
         colour_no_updates=colors[1],
-        mouse_callbacks={'Button1': lambda: qtile.cmd_spawn(
-            terminal + ' -e doas nala upgrade')},
+        mouse_callbacks={
+            'Button3': lambda: qtile.cmd_spawn(terminal + ' -e doas apt upgrade'),
+            'Button1': lambda: qtile.cmd_spawn(terminal + ' -e doas apt update')
+            },
         padding=5,
         background=colors[3]
+    ),
+
+    widget.GenPollUrl(
+        background=colors[4],
+        foreground=colors[1],
+        cmd = '/usr/bin/hostname',
+        shell = True,
+
     ),
 
     widget.HDDBusyGraph(

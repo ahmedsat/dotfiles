@@ -1,0 +1,8 @@
+#!/usr/bin/sh
+
+# I'd like to do it like this
+# wine $HOME/.wine/drive_c/shamela4/lancher.exe
+# but stupid windows
+
+cd $HOME/.wine/drive_c/shamela4/
+wine launcher.exe

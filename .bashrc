@@ -1,11 +1,7 @@
 source ~/dotfiles/terminal/aliases.sh
+source ~/.top_secret
 
 shopt -s autocd
-
-
-# set CapsLock key to work as Ctrl
-/usr/bin/setxkbmap -option "ctrl:nocaps"
-
 
 export NVM_DIR="$HOME/.nvm"
 export EDITOR=vim
@@ -29,7 +25,6 @@ export STARSHIP_CONFIG=$DOTFILES_PATH/starship.toml
 # export MESA_GL_VERSION_OVERRIDE=4.5
 export LIBGL_ALWAYS_SOFTWARE=1 # Fix error alacritty requires hardware supporting GLSL 3.30  
 
-
 Black='\e[0;30m';
 Blue='\e[0;34m';
 Green='\e[0;32m';
@@ -38,15 +33,11 @@ Red='\e[0;31m';
 Purple='\e[0;35m';
 Brown='\e[0;33m';
 
-
 # starsip prompt
 eval "$(starship init bash)"
 
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
 	setdate
-	update &
 	exec startx
 fi
-
-
 

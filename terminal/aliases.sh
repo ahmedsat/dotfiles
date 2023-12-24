@@ -4,18 +4,20 @@
 
 # my aliases
 
-alias search='nala search'
-alias show="nala show"
-alias update='doas nala update'
-alias upgrade='doas nala upgrade '
-alias clean='doas nala clean'
-alias install='doas nala install'
-alias history='nala history'
-alias undo='doas nala history'
-alias list='nala list --upgradable'
-alias purge='doas nala purge'
-alias remove='doas nala remove'
-alias autopurge='doas nala autopurge'
+pkm=apt
+
+alias search='$pkm search'
+alias show="$pkm show"
+alias update='doas $pkm update'
+alias upgrade='doas $pkm upgrade '
+alias clean='doas $pkm clean'
+alias install='doas $pkm install'
+alias history='$pkm history'
+alias undo='doas $pkm history'
+alias list='$pkm list --upgradable'
+alias purge='doas $pkm purge'
+alias remove='doas $pkm remove'
+alias autopurge='doas $pkm autopurge'
 
 alias emacs='emacsclient --create-frame --alternate-editor=""'
 
@@ -26,7 +28,7 @@ alias x=startx
 
 alias c='clear'
 
-alias ls='ls --color=auto'
+alias ls='ls --color=auto -h'
 alias la='ls -A'
 alias l='ls -CF'
 alias ll='ls -alF'

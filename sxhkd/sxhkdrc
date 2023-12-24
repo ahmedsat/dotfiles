@@ -1,39 +1,13 @@
-alt + Return
-	$TERM
-
 Print
 	flameshot gui
 
-control + r ; {w,f,v,e,o} 
-	${BROWSER,FILE_MANAGER,VISUAL,TERM -e $EDITOR,VISUAL $(xclip -o)}
+super + b ; {h}
+	{restart-sxhkd}
 
-super + p ; {m,v,p}
-	mpv {--no-audio,--no-video, } $(xclip -o -selection clipboard)
-
-super + p ; k 
-	pkill mpv
-
-#super + b ; {h}
-#	{restart-sxhkd}
-
-# # video watch queue
-# control + q ;{a,A}
-# 	go-clip -a "/tmp/queue.sock" {add-top,add-bottom} $(xclip -o -selection clipboard)
-
-# control + q ; w
-# 	{watch-queue}
-
-# system controls
 super + control + s ;{w}
 	find $HOME/dotfiles/wallpaper/ -type f | shuf -n 1 | xargs xwallpaper --zoom
 
 # emacs bindings
-super + e ;{b,d,s}
-	emacsclient -c -a 'emacs' --eval '({,ibuffer,dired nil,eshell})'
-super + e ;{e}
+super + e 
 	emacsclient -c -a 'emacs'
 
-
-# mouse buttons
-super + m;{1,2,3}
-	sleep 1 && xdotool click {1,2,3}
