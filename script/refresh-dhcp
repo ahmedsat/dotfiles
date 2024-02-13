@@ -1,0 +1,4 @@
+#!/bin/env sh
+
+sudo ifdown enp2s0 && \
+sudo ifup enp2s0 

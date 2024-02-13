@@ -4,6 +4,8 @@ source $Home/.bashrc
 
 setdate 
 
+emacs --daemon &
+
 sxhkd &
 
 picom &

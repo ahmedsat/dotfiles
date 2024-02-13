@@ -4,7 +4,7 @@
 
 # my aliases
 
-pkm=apt
+pkm=nala
 
 alias search='$pkm search'
 alias show="$pkm show"
@@ -19,10 +19,7 @@ alias purge='doas $pkm purge'
 alias remove='doas $pkm remove'
 alias autopurge='doas $pkm autopurge'
 
-alias emacs='emacsclient --create-frame --alternate-editor=""'
-
 alias reload='source ~/.bashrc' # reload .bashrc file
-
 
 alias x=startx
 

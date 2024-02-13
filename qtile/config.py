@@ -33,8 +33,8 @@ widgetsList = [
         colour_have_updates=colors[1],
         colour_no_updates=colors[1],
         mouse_callbacks={
-            'Button3': lambda: qtile.cmd_spawn(terminal + ' -e doas apt upgrade'),
-            'Button1': lambda: qtile.cmd_spawn(terminal + ' -e doas apt update')
+            'Button3': lambda: qtile.cmd_spawn(terminal + ' -e doas nala upgrade'),
+            'Button1': lambda: qtile.cmd_spawn(terminal + ' -e doas nala update')
             },
         padding=5,
         background=colors[3]
@@ -202,8 +202,10 @@ floating_layout = layout.Floating(
         Match(wm_class="confirmreset"),  # gitk
         Match(wm_class="makebranch"),  # gitk
         Match(wm_class="maketag"),  # gitk
-        Match(wm_class="app"),  # testing app
         Match(wm_class="Test"),  # testing app
+        Match(wm_class="examples"),  # testing app
+        Match(wm_class="app"),  # testing app
+        Match(wm_class="naf3"),  # naf3
         Match(wm_class="LearnOpenGL"),  # testing app
         Match(wm_class="ssh-askpass"),  # ssh-askpass
         Match(title="branchdialog"),  # gitk
