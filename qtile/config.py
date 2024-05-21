@@ -6,6 +6,7 @@ from libqtile.config import Click, Drag,Match, Screen
 from libqtile import layout, bar, widget, hook
 from libqtile.lazy import lazy
 
+
 from vars import *
 from keys import *
 from groups import *
@@ -48,23 +49,44 @@ widgetsList = [
 
     ),
 
-    widget.HDDBusyGraph(
+    # widget.HDDBusyGraph(
+    #     foreground=colors[1],
+    #     fill_color=colors[1],
+    #     background=colors[7],
+    #     padding=5,
+    # ),
+
+   
+
+
+    widget.KeyboardLayout(
+        configured_keyboards=['us','ar'],
+        foreground=colors[1],
+        background=colors[8],
+    ),
+
+    widget.Battery(
         foreground=colors[1],
         fill_color=colors[1],
         background=colors[7],
         padding=5,
-    ),
-    widget.KeyboardLayout(
-        configured_keyboards=['us', 'ar'],
-        foreground=colors[1],
-        background=colors[8],
+        update_interval=1,
+        # charge_controller: lambda (0, 90),
     ),
 
      widget.Systray(
         icon_size=20,
         foreground=colors[1],
+        background=colors[2],
         padding=5,
-        background=colors[2]
+    ),
+
+     widget.BatteryIcon(
+        foreground=colors[1],
+        background=colors[2],
+        fill_color=colors[1],
+        update_interval=1,
+        # charge_controller: lambda (0, 90)
     ),
 
     widget.Clock(
@@ -113,6 +135,8 @@ def currentLayouts():
 def powerLineWidget(widgetToRender, background, foreground, previous_color):
     widgetToRender.background = background
     widgetToRender.foreground = foreground
+    list = []
+    # arrow_widget=None
     arrow_widget = widget.TextBox(
         text=arrow,
         background=previous_color,
@@ -120,10 +144,12 @@ def powerLineWidget(widgetToRender, background, foreground, previous_color):
         fontsize=28,
         padding=-1,
     )
-    return [
-        arrow_widget,
-        widgetToRender,
-    ]
+    
+    # if widgetToRender.name !="Battery":
+    list.append(arrow_widget)
+    list.append(widgetToRender)
+
+    return list
 
 
 def powerLineWidgetsList(WidgetsList):

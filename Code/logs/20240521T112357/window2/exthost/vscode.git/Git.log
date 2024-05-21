@@ -1,0 +1,28 @@
+2024-05-21 11:38:58.473 [info] Log level: Info
+2024-05-21 11:38:58.473 [info] Validating found git in: "git"
+2024-05-21 11:38:58.473 [info] Using git "2.45.1" from "git"
+2024-05-21 11:38:58.473 [info] > git rev-parse --show-toplevel [5ms]
+2024-05-21 11:38:58.473 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2024-05-21 11:38:58.473 [info] Open repository: /home/ahmedsat/golang/erp-reports
+2024-05-21 11:38:58.484 [info] > git rev-parse --show-toplevel [5ms]
+2024-05-21 11:38:58.485 [info] > git config --get commit.template [8ms]
+2024-05-21 11:38:58.493 [info] > git rev-parse --show-toplevel [4ms]
+2024-05-21 11:38:58.496 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-05-21 11:38:58.499 [warning] ENOENT: no such file or directory, open '/home/ahmedsat/golang/erp-reports/.git/refs/remotes/origin/main'
+2024-05-21 11:38:58.499 [info] > git rev-parse --show-toplevel [4ms]
+2024-05-21 11:38:58.502 [info] > git rev-parse refs/remotes/origin/main [3ms]
+2024-05-21 11:38:58.506 [info] > git rev-parse --show-toplevel [4ms]
+2024-05-21 11:38:58.509 [info] > git status -z -uall [4ms]
+2024-05-21 11:38:58.525 [info] > git merge-base refs/heads/main refs/remotes/origin/main [12ms]
+2024-05-21 11:38:58.528 [info] > git rev-parse --show-toplevel [20ms]
+2024-05-21 11:38:58.532 [info] > git config --get commit.template [7ms]
+2024-05-21 11:38:58.533 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-21 11:38:58.533 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [5ms]
+2024-05-21 11:38:58.576 [info] > git rev-parse --show-toplevel [35ms]
+2024-05-21 11:38:58.576 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [37ms]
+2024-05-21 11:38:58.577 [info] > git diff --name-status -z --diff-filter=ADMR cb6771cdae303cced38811abc8c31ba9020059b2...refs/remotes/origin/main [41ms]
+2024-05-21 11:38:58.606 [warning] ENOENT: no such file or directory, open '/home/ahmedsat/golang/erp-reports/.git/refs/remotes/origin/main'
+2024-05-21 11:38:58.611 [info] > git rev-parse refs/remotes/origin/main [5ms]
+2024-05-21 11:38:58.613 [info] > git rev-parse --show-toplevel [9ms]
+2024-05-21 11:38:58.616 [info] > git status -z -uall [3ms]
+2024-05-21 11:38:59.001 [info] > git check-ignore -v -z --stdin [4ms]

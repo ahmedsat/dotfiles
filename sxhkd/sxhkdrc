@@ -5,7 +5,7 @@ super + b ; {h}
 	{restart-sxhkd}
 
 super + control + s ;{w}
-	find $HOME/dotfiles/wallpaper/ -type f | shuf -n 1 | xargs xwallpaper --zoom
+	find $DOTFILES_PATH/wallpaper/ -type f | shuf -n 1 | xargs xwallpaper --zoom
 
 # emacs bindings
 super + e 
