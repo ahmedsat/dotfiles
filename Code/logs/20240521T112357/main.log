@@ -1,6 +1,0 @@
-2024-05-21 11:23:57.141 [info] update#setState idle
-2024-05-21 11:24:27.117 [info] update#setState checking for updates
-2024-05-21 11:24:40.579 [info] update#setState idle
-2024-05-21 11:38:53.724 [info] Extension host with pid 10873 exited with code: 0, signal: unknown.
-2024-05-21 11:38:54.725 [error] Extension host with pid 10873 still exists, forcefully killing it...
-2024-05-21 11:39:30.646 [info] Extension host with pid 13345 exited with code: 0, signal: unknown.

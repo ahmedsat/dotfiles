@@ -1,0 +1,35 @@
+2024-05-21 23:17:36.157 [info] Started local extension host with pid 13388.
+2024-05-21 23:17:36.294 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
+2024-05-21 23:17:37.965 [error] Cannot read properties of undefined (reading 'accessToken'): TypeError: Cannot read properties of undefined (reading 'accessToken')
+    at p.z (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1686:21851)
+    at p.C (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1686:22484)
+    at d.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1686:21653)
+2024-05-21 23:17:39.198 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 23:17:39.199 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 23:17:39.199 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 23:17:39.199 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 23:17:39.199 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 23:17:39.200 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 23:17:39.200 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 23:17:39.200 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 23:17:39.200 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 23:17:39.201 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 23:17:39.201 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 23:17:39.201 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 23:17:44.100 [info] [perf] Render performance baseline is 61ms
+2024-05-21 23:17:57.443 [error] End of central directory record signature not found. Either not a zip file, or file is truncated.: Error: End of central directory record signature not found. Either not a zip file, or file is truncated.
+    at y (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:47:26054)
+    at /usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:47:27488
+    at /usr/share/code/resources/app/node_modules.asar/yauzl/index.js:40:7
+    at /usr/share/code/resources/app/node_modules.asar/yauzl/index.js:190:5
+    at /usr/share/code/resources/app/node_modules.asar/yauzl/index.js:712:5
+    at /usr/share/code/resources/app/node_modules.asar/yauzl/fd-slicer.js:33:7
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:686:5)
+2024-05-21 23:19:33.177 [error] End of central directory record signature not found. Either not a zip file, or file is truncated.: Error: End of central directory record signature not found. Either not a zip file, or file is truncated.
+    at y (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:47:26054)
+    at /usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:47:27488
+    at /usr/share/code/resources/app/node_modules.asar/yauzl/index.js:40:7
+    at /usr/share/code/resources/app/node_modules.asar/yauzl/index.js:190:5
+    at /usr/share/code/resources/app/node_modules.asar/yauzl/index.js:712:5
+    at /usr/share/code/resources/app/node_modules.asar/yauzl/fd-slicer.js:33:7
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:686:5)

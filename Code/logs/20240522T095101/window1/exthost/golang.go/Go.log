@@ -1,0 +1,732 @@
+2024-05-22 09:58:31.207 [info] Running checks...
+2024-05-22 09:58:31.207 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 09:58:35.821 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 09:58:35.821 [info] /home/ahmedsat/golang/erp-reports/glfw/src/x11_platform.h:33:10 fatal error: X11/Xlib.h: No such file or directory
+2024-05-22 09:58:35.821 [info] 
+2024-05-22 10:00:21.157 [info] Running checks...
+2024-05-22 10:00:21.157 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:00:21.378 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:00:21.378 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:96:57 undefined: name
+2024-05-22 10:00:21.378 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:102:2 farm (type) is not an expression
+2024-05-22 10:00:21.378 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:103:54 farm (type) is not an expression (compile)
+2024-05-22 10:00:21.378 [info] 
+2024-05-22 10:00:42.304 [info] Running checks...
+2024-05-22 10:00:42.304 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:00:42.639 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:00:42.639 [info] 
+2024-05-22 10:02:09.689 [info] Running checks...
+2024-05-22 10:02:09.689 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:02:09.905 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:02:09.905 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:97:1 missing return (compile)
+2024-05-22 10:02:09.905 [info] 
+2024-05-22 10:02:15.275 [info] Running checks...
+2024-05-22 10:02:15.275 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:02:15.601 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:02:15.601 [info] 
+2024-05-22 10:02:39.664 [info] Running checks...
+2024-05-22 10:02:39.664 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:02:39.916 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:02:39.916 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:97:2 URL declared and not used
+2024-05-22 10:02:39.916 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:97:57 undefined: name (compile)
+2024-05-22 10:02:39.916 [info] 
+2024-05-22 10:02:44.538 [info] Running checks...
+2024-05-22 10:02:44.538 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:02:44.756 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:02:44.756 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:97:2 URL declared and not used (compile)
+2024-05-22 10:02:44.756 [info] 
+2024-05-22 10:02:56.524 [info] Running checks...
+2024-05-22 10:02:56.524 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:02:56.856 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:02:56.856 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:97:2 URL declared and not used (compile)
+2024-05-22 10:02:56.856 [info] 
+2024-05-22 10:03:22.493 [info] Running checks...
+2024-05-22 10:03:22.494 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/utils
+2024-05-22 10:03:22.710 [info] /home/ahmedsat/golang/erp-reports/utils>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:03:22.710 [info] /home/ahmedsat/golang/erp-reports/utils/http.go:99:44 not enough arguments in call to RestGet
+2024-05-22 10:03:22.710 [info] /home/ahmedsat/golang/erp-reports/utils/http.go:126:44 not enough arguments in call to RestGet
+2024-05-22 10:03:22.710 [info] /home/ahmedsat/golang/erp-reports/utils/http.go:153:44 not enough arguments in call to RestGet
+2024-05-22 10:03:22.710 [info] 
+2024-05-22 10:03:38.636 [info] Running checks...
+2024-05-22 10:03:38.636 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/utils
+2024-05-22 10:03:38.853 [info] /home/ahmedsat/golang/erp-reports/utils>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:03:38.853 [info] /home/ahmedsat/golang/erp-reports/utils/http.go:100:44 not enough arguments in call to RestGet
+2024-05-22 10:03:38.853 [info] /home/ahmedsat/golang/erp-reports/utils/http.go:127:44 not enough arguments in call to RestGet
+2024-05-22 10:03:38.853 [info] /home/ahmedsat/golang/erp-reports/utils/http.go:154:44 not enough arguments in call to RestGet
+2024-05-22 10:03:38.853 [info] 
+2024-05-22 10:03:44.470 [info] Running checks...
+2024-05-22 10:03:44.470 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/utils
+2024-05-22 10:03:44.683 [info] /home/ahmedsat/golang/erp-reports/utils>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:03:44.683 [info] /home/ahmedsat/golang/erp-reports/utils/http.go:101:44 not enough arguments in call to RestGet
+2024-05-22 10:03:44.683 [info] /home/ahmedsat/golang/erp-reports/utils/http.go:128:44 not enough arguments in call to RestGet
+2024-05-22 10:03:44.683 [info] /home/ahmedsat/golang/erp-reports/utils/http.go:155:44 not enough arguments in call to RestGet
+2024-05-22 10:03:44.683 [info] 
+2024-05-22 10:04:52.757 [info] Running checks...
+2024-05-22 10:04:52.757 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/utils
+2024-05-22 10:04:53.038 [info] /home/ahmedsat/golang/erp-reports/utils>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:04:53.038 [info] 
+2024-05-22 10:05:29.442 [info] Running checks...
+2024-05-22 10:05:29.442 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:05:29.662 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:05:29.662 [info] /home/ahmedsat/golang/erp-reports/types/farm-structure.go:167:58 not enough arguments in call to utils.RestGet
+2024-05-22 10:05:29.662 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:97:2 URL declared and not used
+2024-05-22 10:05:29.662 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:112:54 not enough arguments in call to utils.RestGetAndUnmarshal
+2024-05-22 10:05:29.662 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:126:45 not enough arguments in call to utils.RestGet
+2024-05-22 10:05:29.662 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:300:45 not enough arguments in call to utils.RestGet
+2024-05-22 10:05:29.662 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:330:45 not enough arguments in call to utils.RestGet
+2024-05-22 10:05:29.662 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:379:45 not enough arguments in call to utils.RestGet
+2024-05-22 10:05:29.662 [info] 
+2024-05-22 10:05:45.387 [info] Running checks...
+2024-05-22 10:05:45.387 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:05:45.613 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:05:45.613 [info] /home/ahmedsat/golang/erp-reports/types/farm-structure.go:167:58 not enough arguments in call to utils.RestGet
+2024-05-22 10:05:45.613 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:97:2 URL declared and not used
+2024-05-22 10:05:45.613 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:126:45 not enough arguments in call to utils.RestGet
+2024-05-22 10:05:45.613 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:300:45 not enough arguments in call to utils.RestGet
+2024-05-22 10:05:45.613 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:330:45 not enough arguments in call to utils.RestGet
+2024-05-22 10:05:45.613 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:379:45 not enough arguments in call to utils.RestGet
+2024-05-22 10:05:45.613 [info] 
+2024-05-22 10:05:52.733 [info] Running checks...
+2024-05-22 10:05:52.733 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:05:52.949 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:05:52.949 [info] /home/ahmedsat/golang/erp-reports/types/farm-structure.go:167:58 not enough arguments in call to utils.RestGet
+2024-05-22 10:05:52.949 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:97:2 URL declared and not used
+2024-05-22 10:05:52.949 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:126:45 not enough arguments in call to utils.RestGet
+2024-05-22 10:05:52.949 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:300:45 not enough arguments in call to utils.RestGet
+2024-05-22 10:05:52.949 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:330:45 not enough arguments in call to utils.RestGet
+2024-05-22 10:05:52.949 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:379:45 not enough arguments in call to utils.RestGet
+2024-05-22 10:05:52.949 [info] 
+2024-05-22 10:06:11.621 [info] Running checks...
+2024-05-22 10:06:11.621 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:06:11.843 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:06:11.843 [info] /home/ahmedsat/golang/erp-reports/types/farm-structure.go:167:58 not enough arguments in call to utils.RestGet
+2024-05-22 10:06:11.843 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:97:2 URL declared and not used
+2024-05-22 10:06:11.843 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:300:45 not enough arguments in call to utils.RestGet
+2024-05-22 10:06:11.843 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:330:45 not enough arguments in call to utils.RestGet
+2024-05-22 10:06:11.843 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:379:45 not enough arguments in call to utils.RestGet
+2024-05-22 10:06:11.843 [info] 
+2024-05-22 10:06:40.648 [info] Running checks...
+2024-05-22 10:06:40.649 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:06:40.875 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:06:40.875 [info] /home/ahmedsat/golang/erp-reports/types/farm-structure.go:167:58 not enough arguments in call to utils.RestGet
+2024-05-22 10:06:40.875 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:97:2 URL declared and not used (compile)
+2024-05-22 10:06:40.875 [info] 
+2024-05-22 10:07:51.920 [info] Running checks...
+2024-05-22 10:07:51.920 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:07:52.140 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:07:52.140 [info] /home/ahmedsat/golang/erp-reports/types/farm-structure.go:167:58 not enough arguments in call to utils.RestGet
+2024-05-22 10:07:52.140 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:102:32 not enough arguments in call to utils.RestGetToFile
+2024-05-22 10:07:52.140 [info] 
+2024-05-22 10:08:12.324 [info] Running checks...
+2024-05-22 10:08:12.324 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:08:12.538 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:08:12.538 [info] /home/ahmedsat/golang/erp-reports/types/farm-structure.go:167:58 not enough arguments in call to utils.RestGet
+2024-05-22 10:08:12.538 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:102:32 not enough arguments in call to utils.RestGetToFile
+2024-05-22 10:08:12.538 [info] 
+2024-05-22 10:08:47.573 [info] Running checks...
+2024-05-22 10:08:47.573 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:08:47.800 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:08:47.800 [info] /home/ahmedsat/golang/erp-reports/types/farm-structure.go:167:58 not enough arguments in call to utils.RestGet
+2024-05-22 10:08:47.800 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:102:32 not enough arguments in call to utils.RestGetToFile
+2024-05-22 10:08:47.800 [info] 
+2024-05-22 10:08:58.930 [info] Running checks...
+2024-05-22 10:08:58.930 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:08:59.161 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:08:59.161 [info] /home/ahmedsat/golang/erp-reports/types/farm-structure.go:167:58 not enough arguments in call to utils.RestGet
+2024-05-22 10:08:59.161 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:102:32 not enough arguments in call to utils.RestGetToFile
+2024-05-22 10:08:59.161 [info] 
+2024-05-22 10:09:43.697 [info] Running checks...
+2024-05-22 10:09:43.697 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:09:43.924 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:09:43.924 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:102:32 not enough arguments in call to utils.RestGetToFile
+2024-05-22 10:09:43.924 [info] 
+2024-05-22 10:12:00.589 [info] Running checks...
+2024-05-22 10:12:00.589 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:12:00.812 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:12:00.813 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:102:49 not enough arguments in call to utils.RestGetToFile
+2024-05-22 10:12:00.813 [info] 
+2024-05-22 10:12:30.206 [info] Running checks...
+2024-05-22 10:12:30.206 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:12:30.533 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:12:30.533 [info] 
+2024-05-22 10:13:28.653 [info] Running checks...
+2024-05-22 10:13:28.653 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 10:13:29.001 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:13:29.001 [info] /home/ahmedsat/golang/erp-reports/glfw/src/x11_platform.h:33:10 fatal error: X11/Xlib.h: No such file or directory
+2024-05-22 10:13:29.001 [info] 
+2024-05-22 10:13:40.474 [info] Running checks...
+2024-05-22 10:13:40.474 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 10:13:40.727 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:13:40.727 [info] /home/ahmedsat/golang/erp-reports/glfw/src/x11_platform.h:33:10 fatal error: X11/Xlib.h: No such file or directory
+2024-05-22 10:13:40.727 [info] 
+2024-05-22 10:13:56.899 [info] Running checks...
+2024-05-22 10:13:56.899 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 10:13:57.211 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:13:57.211 [info] /home/ahmedsat/golang/erp-reports/glfw/src/x11_platform.h:33:10 fatal error: X11/Xlib.h: No such file or directory
+2024-05-22 10:13:57.211 [info] 
+2024-05-22 10:19:04.609 [info] Running checks...
+2024-05-22 10:19:04.609 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 10:19:14.722 [info] Running checks...
+2024-05-22 10:19:14.722 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 10:19:14.788 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:19:14.788 [info] 
+2024-05-22 10:22:28.769 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:22:28.769 [info] 
+2024-05-22 10:25:06.919 [info] Running checks...
+2024-05-22 10:25:06.919 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:25:07.152 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:25:07.152 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:102:2 data declared and not used (compile)
+2024-05-22 10:25:07.152 [info] 
+2024-05-22 10:26:46.101 [info] Running checks...
+2024-05-22 10:26:46.101 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:26:46.310 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:26:46.310 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:102:2 data declared and not used
+2024-05-22 10:26:46.310 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:105:9 cannot use farms (variable of type []farm) as []Farm value in struct literal (compile)
+2024-05-22 10:26:46.310 [info] 
+2024-05-22 10:27:05.095 [info] Running checks...
+2024-05-22 10:27:05.095 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:27:05.339 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:27:05.339 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:102:2 data declared and not used (compile)
+2024-05-22 10:27:05.339 [info] 
+2024-05-22 10:28:53.778 [info] Running checks...
+2024-05-22 10:28:53.778 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:28:54.006 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:28:54.006 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:108:59 cannot use farms (variable of type []Farm) as []any value in argument to utils.RestGetAndUnmarshalMany (compile)
+2024-05-22 10:28:54.006 [info] 
+2024-05-22 10:29:32.584 [info] Running checks...
+2024-05-22 10:29:32.584 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/utils
+2024-05-22 10:29:32.863 [info] /home/ahmedsat/golang/erp-reports/utils>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:29:32.863 [info] 
+2024-05-22 10:29:41.365 [info] Running checks...
+2024-05-22 10:29:41.365 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/utils
+2024-05-22 10:29:41.655 [info] /home/ahmedsat/golang/erp-reports/utils>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:29:41.655 [info] 
+2024-05-22 10:29:50.923 [info] Running checks...
+2024-05-22 10:29:50.923 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:29:51.272 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:29:51.272 [info] 
+2024-05-22 10:30:35.178 [info] Running checks...
+2024-05-22 10:30:35.178 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:30:35.502 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:30:35.502 [info] 
+2024-05-22 10:30:52.197 [info] Running checks...
+2024-05-22 10:30:52.197 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:30:52.542 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:30:52.542 [info] 
+2024-05-22 10:31:19.500 [info] Running checks...
+2024-05-22 10:31:19.500 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:31:19.848 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:31:19.848 [info] 
+2024-05-22 10:31:46.771 [info] Running checks...
+2024-05-22 10:31:46.771 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:31:47.022 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:31:47.022 [info] 
+2024-05-22 10:32:22.755 [info] Running checks...
+2024-05-22 10:32:22.755 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:32:23.127 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:32:23.127 [info] 
+2024-05-22 10:32:59.037 [info] Running checks...
+2024-05-22 10:32:59.037 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:32:59.541 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:32:59.541 [info] 
+2024-05-22 10:36:04.112 [info] Running checks...
+2024-05-22 10:36:04.112 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:36:04.355 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:36:04.355 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:103:2 res declared and not used
+2024-05-22 10:36:04.355 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:105:14 undefined: data (compile)
+2024-05-22 10:36:04.355 [info] 
+2024-05-22 10:37:16.808 [info] Running checks...
+2024-05-22 10:37:16.808 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:37:17.131 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:37:17.131 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:121:2 undefined: records (compile)
+2024-05-22 10:37:17.131 [info] 
+2024-05-22 10:37:43.396 [info] Running checks...
+2024-05-22 10:37:43.396 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:37:43.728 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:37:43.728 [info] 
+2024-05-22 10:38:02.555 [info] Running checks...
+2024-05-22 10:38:02.555 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:38:02.907 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:38:02.907 [info] 
+2024-05-22 10:38:19.597 [info] Running checks...
+2024-05-22 10:38:19.597 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:38:19.855 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:38:19.855 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:5:2 "fmt" imported and not used (compile)
+2024-05-22 10:38:19.855 [info] 
+2024-05-22 10:38:23.107 [info] Running checks...
+2024-05-22 10:38:23.107 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:38:23.532 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:38:23.532 [info] 
+2024-05-22 10:38:35.707 [info] Running checks...
+2024-05-22 10:38:35.707 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:38:36.037 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:38:36.037 [info] 
+2024-05-22 10:41:07.192 [info] Running checks...
+2024-05-22 10:41:07.192 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 10:41:07.439 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:41:07.439 [info] /home/ahmedsat/golang/erp-reports/main.go:43:2 fs declared and not used
+2024-05-22 10:41:07.439 [info] /home/ahmedsat/golang/erp-reports/main.go:52:23 undefined: farms (compile)
+2024-05-22 10:41:07.439 [info] 
+2024-05-22 10:42:21.622 [info] Running checks...
+2024-05-22 10:42:21.622 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 10:42:21.875 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:42:21.875 [info] /home/ahmedsat/golang/erp-reports/main.go:47:2 fs declared and not used
+2024-05-22 10:42:21.875 [info] /home/ahmedsat/golang/erp-reports/main.go:50:2 functions declared and not used
+2024-05-22 10:42:21.875 [info] /home/ahmedsat/golang/erp-reports/main.go:52:23 undefined: farms (compile)
+2024-05-22 10:42:21.875 [info] 
+2024-05-22 10:43:31.414 [info] Running checks...
+2024-05-22 10:43:31.414 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 10:43:31.649 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:43:31.649 [info] /home/ahmedsat/golang/erp-reports/main.go:55:23 cannot use farms (variable of type []"github.com/ahmedsat/erp-reports/types".Farm) as []"github.com/ahmedsat/erp-reports/async".AsyncF value in argument to async.RunAsync (compile)
+2024-05-22 10:43:31.649 [info] 
+2024-05-22 10:43:38.861 [info] Running checks...
+2024-05-22 10:43:38.861 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 10:43:39.180 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:43:39.180 [info] 
+2024-05-22 10:43:43.627 [info] Running checks...
+2024-05-22 10:43:43.627 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 10:43:43.919 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:43:43.919 [info] 
+2024-05-22 10:44:47.473 [info] Running checks...
+2024-05-22 10:44:47.473 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 10:44:47.748 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:44:47.748 [info] 
+2024-05-22 10:45:26.461 [info] Running checks...
+2024-05-22 10:45:26.461 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 10:45:26.731 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:45:26.731 [info] 
+2024-05-22 10:46:18.616 [info] Running checks...
+2024-05-22 10:46:18.616 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:46:18.954 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:46:18.954 [info] 
+2024-05-22 10:48:48.727 [info] Running checks...
+2024-05-22 10:48:48.727 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 10:48:49.088 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:48:49.088 [info] 
+2024-05-22 10:49:06.392 [info] Running checks...
+2024-05-22 10:49:06.393 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:49:06.624 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:49:06.624 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:5:2 "fmt" imported and not used (compile)
+2024-05-22 10:49:06.624 [info] 
+2024-05-22 10:49:09.482 [info] Running checks...
+2024-05-22 10:49:09.482 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:49:09.807 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:49:09.807 [info] 
+2024-05-22 10:49:23.026 [info] Running checks...
+2024-05-22 10:49:23.026 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 10:49:23.300 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:49:23.300 [info] 
+2024-05-22 10:50:19.265 [info] Running checks...
+2024-05-22 10:50:19.265 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:50:19.646 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:50:19.646 [info] 
+2024-05-22 10:50:26.009 [info] Running checks...
+2024-05-22 10:50:26.009 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:50:26.326 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:50:26.326 [info] 
+2024-05-22 10:50:46.249 [info] Running checks...
+2024-05-22 10:50:46.249 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 10:50:46.574 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:50:46.574 [info] 
+2024-05-22 10:51:07.631 [info] Running checks...
+2024-05-22 10:51:07.631 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 10:51:07.899 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:51:07.899 [info] /home/ahmedsat/golang/erp-reports/main.go:10:2 "github.com/ahmedsat/erp-reports/async" imported and not used (compile)
+2024-05-22 10:51:07.899 [info] 
+2024-05-22 10:51:10.684 [info] Running checks...
+2024-05-22 10:51:10.684 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 10:51:11.120 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:51:11.120 [info] 
+2024-05-22 10:51:31.591 [info] Running checks...
+2024-05-22 10:51:31.591 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 10:51:32.032 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:51:32.032 [info] 
+2024-05-22 10:54:03.594 [info] Running checks...
+2024-05-22 10:54:03.594 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 10:54:03.694 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:54:03.694 [info] /home/ahmedsat/golang/erp-reports/async/log.go:3:26 syntax error: unexpected EOF, expected type (compile)
+2024-05-22 10:54:03.694 [info] 
+2024-05-22 10:54:13.534 [info] Running checks...
+2024-05-22 10:54:13.534 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 10:54:13.662 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:54:13.662 [info] /home/ahmedsat/golang/erp-reports/async/log.go:3:5 var logCounts is unused (U1000)
+2024-05-22 10:54:13.662 [info] 
+2024-05-22 10:54:53.124 [info] Running checks...
+2024-05-22 10:54:53.124 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 10:54:53.257 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:54:53.257 [info] /home/ahmedsat/golang/erp-reports/async/log.go:3:5 var logCounts is unused (U1000)
+2024-05-22 10:54:53.257 [info] 
+2024-05-22 10:55:24.155 [info] Running checks...
+2024-05-22 10:55:24.155 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 10:55:24.293 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:55:24.293 [info] /home/ahmedsat/golang/erp-reports/async/log.go:7:5 ok declared and not used (compile)
+2024-05-22 10:55:24.293 [info] 
+2024-05-22 10:56:04.711 [info] Running checks...
+2024-05-22 10:56:04.711 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 10:56:04.808 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:56:04.808 [info] /home/ahmedsat/golang/erp-reports/async/log.go:7:2 count declared and not used (compile)
+2024-05-22 10:56:04.808 [info] 
+2024-05-22 10:57:08.969 [info] Running checks...
+2024-05-22 10:57:08.969 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 10:57:09.096 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:57:09.096 [info] 
+2024-05-22 10:57:30.158 [info] Running checks...
+2024-05-22 10:57:30.158 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 10:57:30.297 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:57:30.297 [info] /home/ahmedsat/golang/erp-reports/async/log.go:9:15 undefined: logCounts
+2024-05-22 10:57:30.297 [info] /home/ahmedsat/golang/erp-reports/async/log.go:11:3 undefined: logCounts
+2024-05-22 10:57:30.297 [info] /home/ahmedsat/golang/erp-reports/async/log.go:13:3 undefined: logCounts (compile)
+2024-05-22 10:57:30.297 [info] 
+2024-05-22 10:58:23.640 [info] Running checks...
+2024-05-22 10:58:23.640 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 10:58:23.765 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:58:23.765 [info] /home/ahmedsat/golang/erp-reports/async/log.go:13:15 undefined: logCounts
+2024-05-22 10:58:23.765 [info] /home/ahmedsat/golang/erp-reports/async/log.go:15:3 undefined: logCounts
+2024-05-22 10:58:23.765 [info] /home/ahmedsat/golang/erp-reports/async/log.go:17:3 undefined: logCounts (compile)
+2024-05-22 10:58:23.765 [info] 
+2024-05-22 10:58:29.229 [info] Running checks...
+2024-05-22 10:58:29.229 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 10:58:29.362 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:58:29.362 [info] /home/ahmedsat/golang/erp-reports/async/log.go:13:15 undefined: logCounts
+2024-05-22 10:58:29.362 [info] /home/ahmedsat/golang/erp-reports/async/log.go:15:3 undefined: logCounts
+2024-05-22 10:58:29.362 [info] /home/ahmedsat/golang/erp-reports/async/log.go:17:3 undefined: logCounts (compile)
+2024-05-22 10:58:29.362 [info] 
+2024-05-22 10:59:34.075 [info] Running checks...
+2024-05-22 10:59:34.075 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 10:59:34.186 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:59:34.186 [info] /home/ahmedsat/golang/erp-reports/async/log.go:15:3 cannot assign to struct field logPersents[id].count in map
+2024-05-22 10:59:34.186 [info] /home/ahmedsat/golang/erp-reports/async/log.go:17:3 cannot assign to struct field logPersents[id].count in map (compile)
+2024-05-22 10:59:34.186 [info] 
+2024-05-22 10:59:44.149 [info] Running checks...
+2024-05-22 10:59:44.149 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 10:59:44.272 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 10:59:44.272 [info] /home/ahmedsat/golang/erp-reports/async/log.go:15:3 cannot assign to struct field logPersents[id].count in map
+2024-05-22 10:59:44.272 [info] /home/ahmedsat/golang/erp-reports/async/log.go:17:3 cannot assign to struct field logPersents[id].count in map (compile)
+2024-05-22 10:59:44.272 [info] 
+2024-05-22 11:00:14.899 [info] Running checks...
+2024-05-22 11:00:14.900 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:00:15.021 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:00:15.021 [info] /home/ahmedsat/golang/erp-reports/async/log.go:6:9 field max is unused (U1000)
+2024-05-22 11:00:15.021 [info] 
+2024-05-22 11:00:21.650 [info] Running checks...
+2024-05-22 11:00:21.650 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:00:21.781 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:00:21.781 [info] /home/ahmedsat/golang/erp-reports/async/log.go:6:9 field max is unused (U1000)
+2024-05-22 11:00:21.781 [info] 
+2024-05-22 11:02:59.962 [info] Running checks...
+2024-05-22 11:02:59.962 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:03:00.099 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:03:00.099 [info] 
+2024-05-22 11:03:14.473 [info] Running checks...
+2024-05-22 11:03:14.473 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:03:14.606 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:03:14.606 [info] 
+2024-05-22 11:05:12.757 [info] Running checks...
+2024-05-22 11:05:12.757 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:05:12.877 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:05:12.877 [info] /home/ahmedsat/golang/erp-reports/async/log.go:22:2 count declared and not used (compile)
+2024-05-22 11:05:12.878 [info] 
+2024-05-22 11:07:21.419 [info] Running checks...
+2024-05-22 11:07:21.419 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:07:21.521 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:07:21.521 [info] /home/ahmedsat/golang/erp-reports/async/log.go:22:2 count declared and not used
+2024-05-22 11:07:21.521 [info] /home/ahmedsat/golang/erp-reports/async/log.go:29:17 invalid character '[' in octal escape (compile)
+2024-05-22 11:07:21.521 [info] 
+2024-05-22 11:08:19.865 [info] Running checks...
+2024-05-22 11:08:19.865 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:08:20.008 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:08:20.008 [info] /home/ahmedsat/golang/erp-reports/async/log.go:22:2 count declared and not used
+2024-05-22 11:08:20.008 [info] /home/ahmedsat/golang/erp-reports/async/log.go:29:17 invalid character '[' in octal escape (compile)
+2024-05-22 11:08:20.008 [info] 
+2024-05-22 11:13:14.586 [info] Running checks...
+2024-05-22 11:13:14.586 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:13:14.701 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:13:14.701 [info] /home/ahmedsat/golang/erp-reports/async/log.go:29:72 undefined: lb
+2024-05-22 11:13:14.701 [info] /home/ahmedsat/golang/erp-reports/async/log.go:29:82 missing argument in conversion to float32 (compile)
+2024-05-22 11:13:14.701 [info] 
+2024-05-22 11:13:27.666 [info] Running checks...
+2024-05-22 11:13:27.666 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:13:27.804 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:13:27.804 [info] /home/ahmedsat/golang/erp-reports/async/log.go:29:13 couldn't parse format string (SA5009)
+2024-05-22 11:13:27.804 [info] 
+2024-05-22 11:13:43.657 [info] Running checks...
+2024-05-22 11:13:43.657 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:13:43.784 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:13:43.784 [info] 
+2024-05-22 11:14:43.703 [info] Running checks...
+2024-05-22 11:14:43.703 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 11:14:44.063 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:14:44.063 [info] /home/ahmedsat/golang/erp-reports/main.go:50:30 cannot use len(farms) (value of type int) as uint value in argument to async.LogPresentSetMax (compile)
+2024-05-22 11:14:44.063 [info] 
+2024-05-22 11:15:08.609 [info] Running checks...
+2024-05-22 11:15:08.609 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 11:15:08.979 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:15:08.979 [info] 
+2024-05-22 11:15:38.914 [info] Running checks...
+2024-05-22 11:15:38.914 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 11:15:39.180 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:15:39.180 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:5:2 "fmt" imported and not used (compile)
+2024-05-22 11:15:39.180 [info] 
+2024-05-22 11:15:44.092 [info] Running checks...
+2024-05-22 11:15:44.092 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 11:15:44.543 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:15:44.543 [info] 
+2024-05-22 11:16:53.797 [info] Running checks...
+2024-05-22 11:16:53.797 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:16:53.939 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:16:53.939 [info] 
+2024-05-22 11:18:06.207 [info] Running checks...
+2024-05-22 11:18:06.207 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 11:18:06.585 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:18:06.585 [info] 
+2024-05-22 11:18:37.886 [info] Running checks...
+2024-05-22 11:18:37.886 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:18:38.025 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:18:38.025 [info] 
+2024-05-22 11:19:07.515 [info] Running checks...
+2024-05-22 11:19:07.515 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:19:07.643 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:19:07.643 [info] 
+2024-05-22 11:21:24.763 [info] Running checks...
+2024-05-22 11:21:24.763 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:21:24.913 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:21:24.913 [info] 
+2024-05-22 11:21:49.743 [info] Running checks...
+2024-05-22 11:21:49.743 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:21:49.870 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:21:49.870 [info] 
+2024-05-22 11:22:25.619 [info] Running checks...
+2024-05-22 11:22:25.619 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:22:25.749 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:22:25.749 [info] 
+2024-05-22 11:29:47.158 [info] Running checks...
+2024-05-22 11:29:47.158 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:29:47.287 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:29:47.287 [info] 
+2024-05-22 11:30:10.896 [info] Running checks...
+2024-05-22 11:30:10.896 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:30:11.010 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:30:11.010 [info] 
+2024-05-22 11:31:35.963 [info] Running checks...
+2024-05-22 11:31:35.963 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:31:36.104 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:31:36.104 [info] 
+2024-05-22 11:32:12.797 [info] Running checks...
+2024-05-22 11:32:12.798 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 11:32:13.125 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:32:13.125 [info] 
+2024-05-22 11:42:55.947 [info] Running checks...
+2024-05-22 11:42:55.947 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:42:56.109 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:42:56.109 [info] /home/ahmedsat/golang/erp-reports/async/log.go:38:2 ws declared and not used
+2024-05-22 11:42:56.109 [info] /home/ahmedsat/golang/erp-reports/async/log.go:40:10 too many return values
+2024-05-22 11:42:56.109 [info] 
+2024-05-22 11:44:06.141 [info] Running checks...
+2024-05-22 11:44:06.141 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:44:06.314 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:44:06.314 [info] /home/ahmedsat/golang/erp-reports/async/log.go:5:2 "os" imported and not used
+2024-05-22 11:44:06.314 [info] /home/ahmedsat/golang/erp-reports/async/log.go:7:2 "golang.org/x/sys/unix" imported and not used (compile)
+2024-05-22 11:44:06.314 [info] 
+2024-05-22 11:44:09.553 [info] Running checks...
+2024-05-22 11:44:09.553 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:44:09.701 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:44:09.701 [info] 
+2024-05-22 11:44:59.596 [info] Running checks...
+2024-05-22 11:44:59.596 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 11:44:59.987 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:44:59.987 [info] 
+2024-05-22 11:47:51.957 [info] Running checks...
+2024-05-22 11:47:51.958 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 11:47:52.220 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:47:52.220 [info] 
+2024-05-22 11:48:09.214 [info] Running checks...
+2024-05-22 11:48:09.214 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 11:48:09.536 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:48:09.536 [info] 
+2024-05-22 11:48:36.964 [info] Running checks...
+2024-05-22 11:48:36.964 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 11:48:38.322 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:48:38.322 [info] 
+2024-05-22 11:50:23.962 [info] Running checks...
+2024-05-22 11:50:23.962 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:50:24.097 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:50:24.097 [info] 
+2024-05-22 11:50:50.746 [info] Running checks...
+2024-05-22 11:50:50.746 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/async
+2024-05-22 11:50:50.875 [info] /home/ahmedsat/golang/erp-reports/async>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:50:50.875 [info] 
+2024-05-22 11:51:14.011 [info] Running checks...
+2024-05-22 11:51:14.011 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 11:51:14.360 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:51:14.360 [info] 
+2024-05-22 11:53:37.606 [info] Running checks...
+2024-05-22 11:53:37.607 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 11:53:37.936 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:53:37.936 [info] 
+2024-05-22 11:54:15.219 [info] Running checks...
+2024-05-22 11:54:15.219 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 11:54:15.632 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:54:15.632 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:101:2 empty branch (SA9003)
+2024-05-22 11:54:15.632 [info] 
+2024-05-22 11:54:36.021 [info] Running checks...
+2024-05-22 11:54:36.021 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 11:54:36.400 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:54:36.400 [info] 
+2024-05-22 11:54:57.393 [info] Running checks...
+2024-05-22 11:54:57.394 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 11:54:57.733 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:54:57.733 [info] 
+2024-05-22 11:55:29.587 [info] Running checks...
+2024-05-22 11:55:29.587 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 11:55:29.930 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:55:29.930 [info] 
+2024-05-22 11:55:49.790 [info] Running checks...
+2024-05-22 11:55:49.790 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 11:55:50.136 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:55:50.136 [info] 
+2024-05-22 11:56:22.872 [info] Running checks...
+2024-05-22 11:56:22.872 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 11:56:23.245 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:56:23.245 [info] 
+2024-05-22 11:56:31.387 [info] Running checks...
+2024-05-22 11:56:31.387 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 11:56:31.727 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:56:31.727 [info] 
+2024-05-22 11:56:35.042 [info] Running checks...
+2024-05-22 11:56:35.042 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 11:56:35.371 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:56:35.371 [info] 
+2024-05-22 11:56:58.863 [info] Running checks...
+2024-05-22 11:56:58.863 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 11:56:59.248 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:56:59.248 [info] 
+2024-05-22 11:57:31.233 [info] Running checks...
+2024-05-22 11:57:31.233 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 11:57:31.595 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:57:31.595 [info] 
+2024-05-22 11:57:41.490 [info] Running checks...
+2024-05-22 11:57:41.490 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 11:57:41.769 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:57:41.769 [info] 
+2024-05-22 11:58:29.008 [info] Running checks...
+2024-05-22 11:58:29.008 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 11:58:29.295 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:58:29.295 [info] 
+2024-05-22 11:58:32.676 [info] Running checks...
+2024-05-22 11:58:32.676 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 11:58:32.962 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:58:32.963 [info] 
+2024-05-22 11:58:43.360 [info] Running checks...
+2024-05-22 11:58:43.360 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 11:58:43.629 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 11:58:43.629 [info] 
+2024-05-22 12:00:39.678 [info] Running checks...
+2024-05-22 12:00:39.678 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 12:00:39.920 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:00:39.920 [info] 
+2024-05-22 12:07:09.915 [info] Running checks...
+2024-05-22 12:07:09.915 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 12:07:10.183 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:07:10.183 [info] 
+2024-05-22 12:07:27.556 [info] Running checks...
+2024-05-22 12:07:27.556 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 12:07:27.831 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:07:27.831 [info] 
+2024-05-22 12:08:11.361 [info] Running checks...
+2024-05-22 12:08:11.362 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 12:08:11.611 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:08:11.611 [info] 
+2024-05-22 12:12:33.067 [info] Running checks...
+2024-05-22 12:12:33.067 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 12:12:33.385 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:12:33.385 [info] 
+2024-05-22 12:13:02.987 [info] Running checks...
+2024-05-22 12:13:02.987 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports
+2024-05-22 12:13:03.262 [info] /home/ahmedsat/golang/erp-reports>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:13:03.262 [info] 
+2024-05-22 12:13:54.545 [info] Running checks...
+2024-05-22 12:13:54.546 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:13:54.798 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:13:54.798 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:439:6 missing function body (compile)
+2024-05-22 12:13:54.798 [info] 
+2024-05-22 12:15:23.770 [info] Running checks...
+2024-05-22 12:15:23.770 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:15:24.142 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:15:24.142 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:443:6 missing function body (compile)
+2024-05-22 12:15:24.142 [info] 
+2024-05-22 12:18:03.677 [info] Running checks...
+2024-05-22 12:18:03.677 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:18:03.979 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:18:03.979 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:13:22 undefined: name (compile)
+2024-05-22 12:18:03.979 [info] 
+2024-05-22 12:18:56.642 [info] Running checks...
+2024-05-22 12:18:56.642 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:18:56.865 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:18:56.865 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:450:6 missing function body (compile)
+2024-05-22 12:18:56.865 [info] 
+2024-05-22 12:20:17.836 [info] Running checks...
+2024-05-22 12:20:17.837 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:20:18.049 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:20:18.049 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:15:2 performanceAppraisalFile declared and not used
+2024-05-22 12:20:18.049 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:19:8 undefined: f (compile)
+2024-05-22 12:20:18.049 [info] 
+2024-05-22 12:21:11.411 [info] Running checks...
+2024-05-22 12:21:11.411 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:21:11.637 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:21:11.637 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:20:8 undefined: f (compile)
+2024-05-22 12:21:11.637 [info] 
+2024-05-22 12:21:26.397 [info] Running checks...
+2024-05-22 12:21:26.397 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:21:26.639 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:21:26.639 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:450:6 missing function body (compile)
+2024-05-22 12:21:26.639 [info] 
+2024-05-22 12:22:08.094 [info] Running checks...
+2024-05-22 12:22:08.094 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:22:08.453 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:22:08.453 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:12:5 var performanceAppraisalFile is unused (U1000)
+2024-05-22 12:22:08.453 [info] 
+2024-05-22 12:22:25.846 [info] Running checks...
+2024-05-22 12:22:25.846 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:22:26.283 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:22:26.284 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:13:5 var performanceAppraisalFile is unused (U1000)
+2024-05-22 12:22:26.284 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:14:5 var mu is unused (U1000)
+2024-05-22 12:22:26.284 [info] 
+2024-05-22 12:22:50.634 [info] Running checks...
+2024-05-22 12:22:50.634 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:22:50.984 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:22:50.984 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:13:5 var performanceAppraisalFile is unused (U1000)
+2024-05-22 12:22:50.984 [info] 
+2024-05-22 12:25:53.511 [info] Running checks...
+2024-05-22 12:25:53.512 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:25:53.742 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:25:53.742 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:455:2 not enough arguments in call to io.Copy
+2024-05-22 12:25:53.742 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:456:1 missing return (compile)
+2024-05-22 12:25:53.742 [info] 
+2024-05-22 12:25:59.095 [info] Running checks...
+2024-05-22 12:25:59.095 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:25:59.322 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:25:59.322 [info] /home/ahmedsat/golang/erp-reports/types/farm.go:455:2 not enough arguments in call to io.Copy
+2024-05-22 12:25:59.322 [info] 
+2024-05-22 12:27:55.625 [info] Running checks...
+2024-05-22 12:27:55.625 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:27:55.972 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:27:55.972 [info] 
+2024-05-22 12:29:06.036 [info] Running checks...
+2024-05-22 12:29:06.036 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:29:06.358 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:29:06.358 [info] 
+2024-05-22 12:29:40.009 [info] Running checks...
+2024-05-22 12:29:40.009 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:29:40.357 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:29:40.357 [info] 
+2024-05-22 12:30:02.378 [info] Running checks...
+2024-05-22 12:30:02.378 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:30:02.910 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:30:02.910 [info] 
+2024-05-22 12:33:37.262 [info] Running checks...
+2024-05-22 12:33:37.262 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:33:37.903 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:33:37.903 [info] 
+2024-05-22 12:33:49.978 [info] Running checks...
+2024-05-22 12:33:49.978 [info] Starting linting the current package at /home/ahmedsat/golang/erp-reports/types
+2024-05-22 12:33:50.507 [info] /home/ahmedsat/golang/erp-reports/types>Finished running tool: /home/ahmedsat/.local/go/bin/staticcheck
+2024-05-22 12:33:50.507 [info] 

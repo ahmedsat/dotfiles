@@ -1,2 +1,0 @@
-2024-05-21 11:39:15.803 [error] electron #21: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_INTERNET_DISCONNECTED
-2024-05-21 11:39:18.548 [error] electron #22: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_NAME_NOT_RESOLVED

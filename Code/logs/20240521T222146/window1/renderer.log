@@ -1,0 +1,65 @@
+2024-05-21 22:21:47.599 [info] Started local extension host with pid 6616.
+2024-05-21 22:21:47.701 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
+2024-05-21 22:21:49.345 [error] Cannot read properties of undefined (reading 'accessToken'): TypeError: Cannot read properties of undefined (reading 'accessToken')
+    at p.z (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1686:21851)
+    at p.C (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1686:22484)
+    at d.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1686:21653)
+2024-05-21 22:21:50.911 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 22:21:50.912 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 22:21:50.912 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 22:21:50.912 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 22:21:50.913 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 22:21:50.913 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 22:21:50.913 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 22:21:50.914 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 22:21:50.914 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 22:21:50.914 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 22:21:50.915 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 22:21:50.915 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-05-21 22:21:52.995 [info] [perf] Render performance baseline is 50ms
+2024-05-21 22:22:03.104 [error] Cancelled: Canceled
+    at ee.B (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:792:24018)
+    at async ee.z (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:792:20814)
+    at async ee.z (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:792:21759)
+    at async _ (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:792:19741)
+    at async ee.query (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:792:20039)
+    at async X.queryGallery (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2477:13663)
+    at async Me.Kc (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2413:23125)
+    at async Me.uc (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2413:14733)
+    at async vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2413:13032
+2024-05-21 22:50:36.118 [error] Download: net::ERR_TIMED_OUT
+    at d.download (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:86:15503)
+    at async ie.C (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:121254)
+    at async ie.x (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:120668)
+    at async ie.h (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:118337)
+2024-05-21 22:50:36.121 [error] net::ERR_TIMED_OUT: Download: net::ERR_TIMED_OUT
+    at d.download (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:86:15503)
+    at async ie.C (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:121254)
+    at async ie.x (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:120668)
+    at async ie.h (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:118337)
+2024-05-21 23:15:46.014 [error] End of central directory record signature not found. Either not a zip file, or file is truncated.: Error: End of central directory record signature not found. Either not a zip file, or file is truncated.
+    at y (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:47:26054)
+    at /usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:47:27488
+    at /usr/share/code/resources/app/node_modules.asar/yauzl/index.js:40:7
+    at /usr/share/code/resources/app/node_modules.asar/yauzl/index.js:190:5
+    at /usr/share/code/resources/app/node_modules.asar/yauzl/index.js:712:5
+    at /usr/share/code/resources/app/node_modules.asar/yauzl/fd-slicer.js:33:7
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:686:5)
+2024-05-21 23:16:26.626 [error] Download: net::ERR_NETWORK_CHANGED
+    at d.download (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:86:15503)
+    at async ie.C (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:121254)
+    at async ie.x (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:120668)
+    at async ie.h (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:118337)
+2024-05-21 23:16:26.650 [error] net::ERR_NETWORK_CHANGED: Download: net::ERR_NETWORK_CHANGED
+    at d.download (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:86:15503)
+    at async ie.C (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:121254)
+    at async ie.x (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:120668)
+    at async ie.h (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:118337)
+2024-05-21 23:16:37.540 [error] End of central directory record signature not found. Either not a zip file, or file is truncated.: Error: End of central directory record signature not found. Either not a zip file, or file is truncated.
+    at y (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:47:26054)
+    at /usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:47:27488
+    at /usr/share/code/resources/app/node_modules.asar/yauzl/index.js:40:7
+    at /usr/share/code/resources/app/node_modules.asar/yauzl/index.js:190:5
+    at /usr/share/code/resources/app/node_modules.asar/yauzl/index.js:712:5
+    at /usr/share/code/resources/app/node_modules.asar/yauzl/fd-slicer.js:33:7
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:686:5)
