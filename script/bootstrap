@@ -15,7 +15,6 @@ DIRS=(
 	~/.config/go
 	~/.config/sxhkd
 	~/.config/conky
-	~/.config/Code
 	~/.local/emacs
 	~/.local/scripts
 )
@@ -45,7 +44,6 @@ ln -sf $SOURCE/../fonts         	~/.local/share/fonts
 ln -sf $SOURCE/../alacritty		~/.config/alacritty
 ln -sf $SOURCE/../go 			~/.config/go
 ln -sf $SOURCE/../sxhkd			~/.config/sxhkd
-ln -sf $SOURCE/../Code			~/.config/Code
 ln -sf $SOURCE/../conky			~/.config/conky
 ln -sf $SOURCE/../emacs-profiles	~/.local/emacs
 ln -sf $SOURCE				~/.local/scripts

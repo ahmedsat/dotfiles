@@ -6,6 +6,7 @@ terminalKeys = [
     Key([], "t", lazy.group["scratchpad"].dropdown_toggle("term"), desc="Toggle main scratchpad"),
     Key([], "d", lazy.group["scratchpad"].dropdown_toggle("debug"), desc="Toggle debug scratchpad"),
     Key([], "l", lazy.group["scratchpad"].dropdown_toggle("log"), desc="Toggle log scratchpad"),
+    Key([], "s", lazy.group["scratchpad"].dropdown_toggle("scrcpy"), desc="Toggle log scratchpad"),
 
 ]
 
