@@ -16,9 +16,9 @@ export LESS='-M'
 export CLICOLOR=1
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 export TERM=xterm-256color
+export ANDROID_HOME=/usr/lib/android-sdk
 
-
-PATH=/usr/local/bin:/usr/bin/:/bin:/usr/local/games/usr/games/:$HOME/.local/bin:$HOME/.local/go/bin/:$HOME/.local/fultter/flutter/bin
+PATH=/usr/local/bin:/usr/bin/:/bin:/usr/local/games/usr/games/:$HOME/.local/bin:$HOME/.local/go/bin/:$HOME/.local/fultter/bin
 PATH=$PATH:$DOTFILES_PATH/script:$DOTFILES_PATH/script/dmenu-script
 PATH=$PATH:$HOME/.local/bin/flutter/bin
 export PATH

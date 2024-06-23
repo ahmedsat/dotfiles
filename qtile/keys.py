@@ -56,8 +56,7 @@ keys = [
         desc="Next keyboard layout.",
     ),
 
-    Key([mod], "b",lazy.hide_show_bar("top")),
-
+    Key([mod, "control", "shift"], "b", lazy.hide_show_bar("top"), desc="Toggle fullscreen"),
     Key([mod], "r", lazy.spawn("dmenu_run"), desc="Spawn a dmenu"),
 
 

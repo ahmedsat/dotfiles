@@ -1,3 +1,0 @@
-2024-05-21 23:20:09.394 [error] browser #6: https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/cpptools/1.20.5/1715134609080/Microsoft.VisualStudio.Code.Manifest?targetPlatform=linux-x64 - error GET XHR failed
-2024-05-21 23:20:11.155 [error] browser #8: https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/cpptools/1.20.5/1715134609080/Microsoft.VisualStudio.Services.Content.Details?targetPlatform=linux-x64 - error GET XHR failed
-2024-05-21 23:20:12.282 [error] browser #9: https://ms-vscode.gallery.vsassets.io/_apis/public/gallery/publisher/ms-vscode/extension/cpptools/1.20.5/assetbyname/Microsoft.VisualStudio.Services.Content.Details?targetPlatform=linux-x64 - error GET XHR failed

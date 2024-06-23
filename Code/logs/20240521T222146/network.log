@@ -1,3 +1,0 @@
-2024-05-21 23:16:24.655 [error] electron #116: https://ms-vscode.gallery.vsassets.io/_apis/public/gallery/publisher/ms-vscode/extension/cpptools/1.20.5/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?redirect=true&targetPlatform=linux-x64&install=true - error GET net::ERR_NETWORK_CHANGED
-2024-05-21 23:16:26.570 [error] electron #118: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_NETWORK_CHANGED
-2024-05-21 23:16:29.660 [error] electron #119: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_NETWORK_CHANGED

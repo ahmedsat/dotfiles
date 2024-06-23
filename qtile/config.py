@@ -56,11 +56,9 @@ widgetsList = [
     #     padding=5,
     # ),
 
-   
-
 
     widget.KeyboardLayout(
-        configured_keyboards=['us','ar'],
+        configured_keyboards=['us','eg'],
         foreground=colors[1],
         background=colors[8],
     ),
@@ -144,7 +142,7 @@ def powerLineWidget(widgetToRender, background, foreground, previous_color):
         fontsize=28,
         padding=-1,
     )
-    
+
     # if widgetToRender.name !="Battery":
     list.append(arrow_widget)
     list.append(widgetToRender)
@@ -186,7 +184,7 @@ screens = [
                     foreground=colors[2],
                     background=colors[0]
                 ),
-                
+
                 *currentLayouts(),
 
                 widget.Prompt(
@@ -200,9 +198,9 @@ screens = [
                 ),
               *powerLineWidgetsList(widgetsList),
             ],
-            24, 
+            24,
         ),
-        
+
     ),
 ]
 
@@ -228,9 +226,13 @@ floating_layout = layout.Floating(
         Match(wm_class="confirmreset"),  # gitk
         Match(wm_class="makebranch"),  # gitk
         Match(wm_class="maketag"),  # gitk
-        Match(wm_class="Test"),  # testing app
+	Match(wm_class="virtscreen"), #
+	Match(wm_class="Test"),  # testing app
+        Match(title="Test"),  # testing app
         Match(wm_class="examples"),  # testing app
         Match(wm_class="app"),  # testing app
+        Match(wm_class=""),  # testing app
+        Match(wm_class=""),  # testing app
         Match(wm_class="naf3"),  # naf3
         Match(wm_class="LearnOpenGL"),  # testing app
         Match(wm_class="ssh-askpass"),  # ssh-askpass
