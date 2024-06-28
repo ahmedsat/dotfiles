@@ -39,7 +39,7 @@ keys = [
     Key(["control", "shift"], "r", lazy.reload_config()),
     Key([mod, "control", "shift"], "r", lazy.restart()),
     Key([mod], "space",lazy.next_layout()),
-    Key([alt],"Tab",lazy.widget["keyboardlayout"].next_keyboard()),
+    Key([alt],"space",lazy.widget["keyboardlayout"].next_keyboard()),
 
     Key([mod, "control", "shift"], "b", lazy.hide_show_bar("top")),
     Key([mod], "r", lazy.spawn("dmenu_run_history")),

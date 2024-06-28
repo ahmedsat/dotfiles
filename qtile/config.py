@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 import os
 import subprocess
 from libqtile import qtile
@@ -14,17 +15,18 @@ from groups import *
 
 layouts = [
     layout.MonadTall(
-        align=layout.MonadTall._right,
+        align=layout.MonadTall._left,
         border_focus="#ff5e00",
         border_normal="#00a1ff",
-        border_width=1,
         change_ratio=0.05,
-        margin=10,
         max_ratio=0.75,
         min_ratio=0.25,
         min_secondary_size=85,
         new_client_position='after_current',
         ratio=0.75,
+        
+        border_width=1,
+        margin=10,
         single_border_width=0,
         single_margin=10,
     ), 
@@ -260,6 +262,7 @@ floating_layout = layout.Floating(
         Match(title="pinentry"),  # GPG key password entry
     ]
 )
+
 auto_fullscreen = True
 
 focus_on_window_activation = "smart"

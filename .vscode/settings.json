@@ -3,5 +3,27 @@
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "python.formatting.provider": "none",
-  "cSpell.words": ["alacritty"]
+  "cSpell.words": [
+    "alacritty",
+    "askpass",
+    "borderwidth",
+    "branchdialog",
+    "colour",
+    "confirmreset",
+    "dgroups",
+    "doas",
+    "DOTFILES",
+    "fontsize",
+    "fullscreen",
+    "gitk",
+    "libqtile",
+    "makebranch",
+    "maketag",
+    "nala",
+    "pinentry",
+    "qtile",
+    "Systray",
+    "virtscreen",
+    "wmname"
+  ]
 }
