@@ -69,3 +69,8 @@ alias dc='pwd | xclip -i'
 now(){
 	date +'%Y/%m/%d-%H:%M:%S'
 }
+
+pipx='doas pipx'
+
+alias pip=pipx
+alias pip3=pipx

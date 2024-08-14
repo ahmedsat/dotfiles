@@ -3,7 +3,5 @@
 emacs/eln-cache
 emacs/auto-save-list
 
-Code/Cache/
-
 *.swp
-# __pycache__/
+__pycache__/

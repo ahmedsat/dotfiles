@@ -23,12 +23,12 @@ layouts = [
         min_ratio=0.25,
         min_secondary_size=85,
         new_client_position='after_current',
-        ratio=0.75,
+        ratio=0.70,
         
         border_width=1,
         margin=10,
         single_border_width=0,
-        single_margin=10,
+        single_margin=0,
     ), 
     layout.Max(),
 ]

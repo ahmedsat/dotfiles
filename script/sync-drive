@@ -1,0 +1,4 @@
+#!/usr/bin/sh
+
+fusermount -u $HOME/drive
+rclone mount work-drive:/ $HOME/drive/
