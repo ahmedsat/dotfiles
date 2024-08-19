@@ -17,6 +17,7 @@ DIRS=(
 	~/.config/conky
 	~/.local/emacs
 	~/.local/scripts
+	~/.local/wallpaper
 )
 
 FILES=(
@@ -34,17 +35,18 @@ for FILE in ${FILES[@]};do
 done
 
 
-ln -sf $SOURCE/../emacs			~/.config/emacs
-ln -sf $SOURCE/../terminal		~/.config/terminal
-ln -sf $SOURCE/../.bashrc		~/.bashrc
-ln -sf $SOURCE/../.xinitrc		~/.xinitrc
-ln -sf $SOURCE/../qtile			~/.config/qtile
-ln -sf $SOURCE/../systemd		~/.config/systemd
+ln -sf $SOURCE/../emacs				~/.config/emacs
+ln -sf $SOURCE/../terminal			~/.config/terminal
+ln -sf $SOURCE/../.bashrc			~/.bashrc
+ln -sf $SOURCE/../.xinitrc			~/.xinitrc
+ln -sf $SOURCE/../qtile				~/.config/qtile
+ln -sf $SOURCE/../systemd			~/.config/systemd
 ln -sf $SOURCE/../fonts         	~/.local/share/fonts
-ln -sf $SOURCE/../alacritty		~/.config/alacritty
-ln -sf $SOURCE/../go 			~/.config/go
-ln -sf $SOURCE/../sxhkd			~/.config/sxhkd
-ln -sf $SOURCE/../conky			~/.config/conky
+ln -sf $SOURCE/../alacritty			~/.config/alacritty
+ln -sf $SOURCE/../go 				~/.config/go
+ln -sf $SOURCE/../sxhkd				~/.config/sxhkd
+ln -sf $SOURCE/../conky				~/.config/conky
 ln -sf $SOURCE/../emacs-profiles	~/.local/emacs
-ln -sf $SOURCE				~/.local/scripts
+ln -sf $SOURCE						~/.local/scripts
+ln -sf $SOURCE/../wallpaper			~/.local/wallpaper
 

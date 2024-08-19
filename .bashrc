@@ -21,6 +21,7 @@ export ANDROID_HOME=/usr/lib/android-sdk
 PATH=/usr/local/bin:/usr/bin/:/bin:/usr/local/games/usr/games/:$HOME/.local/bin:$HOME/.local/go/bin/:$HOME/.local/fultter/bin
 PATH=$PATH:$DOTFILES_PATH/script:$DOTFILES_PATH/script/dmenu-script
 PATH=$PATH:$HOME/.local/bin/flutter/bin
+PATH=$PATH:$HOME/.cargo/bin/
 export PATH
 
 export STARSHIP_CONFIG=$DOTFILES_PATH/starship.toml
@@ -46,3 +47,4 @@ fi
 
 complete -cf doas
 # complete -F _command doas
+. "$HOME/.cargo/env"

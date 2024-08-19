@@ -3,6 +3,8 @@ from libqtile.config import Group,  Key, ScratchPad,DropDown
 from vars import *
 from keys import *
 
+termOptions = " -o 'window.opacity=0.9'"
+
 groups = [
     Group("WWW"),
     Group("DEV"),
@@ -13,15 +15,15 @@ groups = [
         "scratchpad",
         [
             DropDown(
-                "term", 
-                terminal + " -t terminal", 
+                "term",
+                terminal + " -t terminal" + termOptions,
                 opacity=1.0,x=0.05, y=0.05, 
                 width=0.9, 
                 height=0.9, 
                 on_focus_lost_hide=False),
             DropDown(
                 "debug", 
-                terminal + " -t debug", 
+                terminal + " -t debug" + termOptions, 
                 opacity=1.0,
                 x=0.05, 
                 y=0.05, 
@@ -30,7 +32,7 @@ groups = [
                 on_focus_lost_hide=False),
             DropDown(
                 "log", 
-                terminal + " -t log -e htop", 
+                terminal + " -t log -e htop" + termOptions, 
                 opacity=1.0,
                 x=0.05, 
                 y=0.05, 
