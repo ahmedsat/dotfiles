@@ -1,0 +1,2 @@
+#!/bin/sh
+erp-reports report -from 2025-09-01 -to 2025-09-30 -plan "json/farms-plan.json" -out 9

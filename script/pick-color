@@ -1,0 +1,5 @@
+#!/bin/bash
+
+grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:u.p{0,0}]' txt:- | grep -o '#[A-Fa-f0-9]\{6\}' | wl-copy
+
+wl-paste

@@ -1,0 +1,105 @@
+#!/bin/env python3
+from reportlab.lib.pagesizes import A4
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.lib import colors
+
+# ملف PDF
+file_path = "./cv.pdf"
+
+# إعدادات التنسيقات
+styles = getSampleStyleSheet()
+styles.add(ParagraphStyle(name='Heading1Bold', parent=styles['Heading1'], fontName='Helvetica-Bold'))
+styles.add(ParagraphStyle(name='NormalBold', parent=styles['Normal'], fontName='Helvetica-Bold'))
+
+doc = SimpleDocTemplate(file_path, pagesize=A4,
+                        rightMargin=20, leftMargin=20,
+                        topMargin=20, bottomMargin=20)
+
+content = []
+
+# العنوان
+content.append(Paragraph("Ahmed Hassan Younes Hassan", styles['Heading1Bold']))
+content.append(Paragraph("Egypt | Email: ahmedsat303@gmail.com | Phone: +20 115 914 2527", styles['Normal']))
+content.append(Paragraph("LinkedIn: https://www.linkedin.com/in/ahmed-hassan-younes-hassan-a69850119/ | GitHub: https://github.com/ahmedsat/", styles['Normal']))
+content.append(Spacer(1, 12))
+
+# الملخص
+content.append(Paragraph("Summary", styles['Heading2']))
+content.append(Paragraph(
+    "Backend Developer specializing in Go (Golang) with strong experience in building scalable REST APIs, "
+    "data synchronization services, and backend architecture. Skilled in database design and optimization, "
+    "API security, and Linux-based development. Passionate about problem-solving, clean code, and continuous improvement.",
+    styles['Normal']
+))
+content.append(Spacer(1, 12))
+
+# المهارات
+content.append(Paragraph("Core Skills", styles['Heading2']))
+skills = [
+    ["Languages:", "Go (Golang), Node.js, JavaScript, Python, PHP, Java, C++"],
+    ["Frameworks & Tools:", "Express.js, Laravel, REST API Development, Data Synchronization"],
+    ["Databases:", "MongoDB, MySQL"],
+    ["Others:", "Git, Linux, Data Validation, API Security, CI/CD"]
+]
+table = Table(skills, colWidths=[100, 400])
+table.setStyle(TableStyle([
+    ('VALIGN', (0,0), (-1,-1), 'TOP'),
+    ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
+    ('LINEBELOW', (0,0), (-1,0), 1, colors.black),
+    ('BOTTOMPADDING', (0,0), (-1,-1), 6),
+]))
+content.append(table)
+content.append(Spacer(1, 12))
+
+# الخبرة العملية
+content.append(Paragraph("Experience", styles['Heading2']))
+content.append(Paragraph("Software Developer – EBDA (Full-time)", styles['NormalBold']))
+content.append(Paragraph("Feb 2024 – Present", styles['Normal']))
+content.append(Paragraph(
+    "- Developed backend services and APIs using Go and Node.js for enterprise systems.<br/>"
+    "- Implemented data synchronization processes between external tools and ERP systems.<br/>"
+    "- Conducted data validation, restructuring, and optimization for large datasets.<br/>"
+    "- Managed MongoDB and MySQL databases to ensure data integrity and performance.<br/>"
+    "- Collaborated with teams to deliver secure and scalable solutions in Linux environments.",
+    styles['Normal']
+))
+content.append(Spacer(1, 12))
+
+# المشاريع
+content.append(Paragraph("Projects", styles['Heading2']))
+content.append(Paragraph("Kobo-to-ERP Middleware (Go)", styles['NormalBold']))
+content.append(Paragraph(
+    "Developed middleware to fetch data from KoboToolbox, perform data analysis and validation, restructure it, "
+    "and send it to ERPNext. Improved data accuracy and reduced processing time by implementing validation rules "
+    "and optimized transformations.", styles['Normal']
+))
+content.append(Spacer(1, 6))
+
+content.append(Paragraph("Sat Password Manager API (Node.js, MongoDB)", styles['NormalBold']))
+content.append(Paragraph(
+    "Created a secure API for storing and retrieving encrypted passwords. Implemented JWT authentication, "
+    "AES encryption, and API rate limiting. Designed endpoints for authentication and CRUD password management "
+    "with role-based access. GitHub: https://github.com/ahmedsat/Sat-Password-Manager-API",
+    styles['Normal']
+))
+content.append(Spacer(1, 12))
+
+# التعليم
+content.append(Paragraph("Education", styles['Heading2']))
+content.append(Paragraph("Bachelor’s Degree in Agriculture – Fayoum University (2015–2019)", styles['Normal']))
+content.append(Spacer(1, 12))
+
+# اللغات
+content.append(Paragraph("Languages", styles['Heading2']))
+content.append(Paragraph("Arabic: Native", styles['Normal']))
+content.append(Paragraph("English: Good", styles['Normal']))
+content.append(Spacer(1, 12))
+
+# References
+content.append(Paragraph("References", styles['Heading2']))
+content.append(Paragraph("Available upon request.", styles['Normal']))
+
+# إنشاء الملف
+doc.build(content)
+

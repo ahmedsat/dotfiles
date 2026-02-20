@@ -1,43 +1,37 @@
-[colors]
-draw_bold_text_with_bright_colors = true
+# Enhanced Alacritty Configuration
 
-[colors.bright]
-black = "#5b6268"
-blue = "#3071db"
-cyan = "#46d9ff"
-green = "#4db5bd"
-magenta = "#a9a1e1"
-red = "#da8548"
-white = "#dfdfdf"
-yellow = "#ecbe7b"
-
-[colors.cursor]
-cursor = "#528bff"
-text = "CellBackground"
-
-[colors.normal]
-black = "#1c1f24"
-blue = "#51afef"
-cyan = "#5699af"
-green = "#98be65"
-magenta = "#c678dd"
-red = "#ff6c6b"
-white = "#dfdfdf"
-yellow = "#da8548"
-
-[colors.primary]
-background = "#282c34"
-foreground = "#bbc2cf"
-
-[colors.selection]
-background = "#3e4451"
-text = "CellForeground"
-
+# Performance settings
 [env]
 TERM = "xterm-256color"
 
+# Window appearance
+[window]
+opacity = 0.5           # Adjusted opacity to match VSCode terminal transparency
+title = "Alacritty"
+dynamic_title = true    # Terminal title will update based on running program
+dynamic_padding = false
+decorations = "full"    # Options: full, none, transparent, buttonless
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 8 # Slightly increased padding for better readability
+y = 8
+
+# Scrolling configuration
+[scrolling]
+history = 10000 # Doubled history for more accessible command history
+multiplier = 3  # Faster scrolling
+
+# Font configuration
 [font]
-size = 8.0
+size = 16.0
+
+[font.normal]
+family = "Hack Nerd Font Mono"
+style = "Regular"
 
 [font.bold]
 family = "Hack Nerd Font Mono"
@@ -51,10 +45,71 @@ style = "Bold Italic"
 family = "Hack Nerd Font Mono"
 style = "Italic"
 
-[font.normal]
-family = "Hack Nerd Font Mono"
-style = "Regular"
+[font.offset]
+x = 0
+y = -1 # Slight vertical adjustment for better alignment
 
+# Cursor configuration
+[cursor]
+style = { shape = "Block", blinking = "On" }
+unfocused_hollow = true
+thickness = 0.15
+
+# VSCode terminal-like colors - correctly matched
+[colors]
+draw_bold_text_with_bright_colors = true
+
+# Primary colors
+[colors.primary]
+background = "#1e1e1e" # VSCode terminal background
+foreground = "#cccccc" # VSCode terminal foreground
+
+# Normal colors - exact VSCode terminal matches
+[colors.normal]
+black = "#000000"   # VSCode terminal black
+red = "#cd3131"     # VSCode terminal red
+green = "#0dbc79"   # VSCode terminal green
+yellow = "#e5e510"  # VSCode terminal yellow
+blue = "#2472c8"    # VSCode terminal blue
+magenta = "#bc3fbc" # VSCode terminal magenta
+cyan = "#11a8cd"    # VSCode terminal cyan
+white = "#e5e5e5"   # VSCode terminal white
+
+# Bright colors - exact VSCode terminal matches
+[colors.bright]
+black = "#666666"   # VSCode terminal bright black
+red = "#f14c4c"     # VSCode terminal bright red
+green = "#23d18b"   # VSCode terminal bright green
+yellow = "#f5f543"  # VSCode terminal bright yellow
+blue = "#3b8eea"    # VSCode terminal bright blue
+magenta = "#d670d6" # VSCode terminal bright magenta
+cyan = "#29b8db"    # VSCode terminal bright cyan
+white = "#e5e5e5"   # VSCode terminal bright white
+
+# Cursor colors
+[colors.cursor]
+cursor = "#ffffff"      # VSCode cursor color
+text = "CellBackground"
+
+# Selection colors
+[colors.selection]
+background = "#264f78"  # VSCode selection blue
+text = "CellForeground"
+
+# Search colors
+[colors.search.matches]
+background = "#515c6a"
+foreground = "#d4d4d4"
+
+[colors.search.focused_match]
+background = "#88c0d0"
+foreground = "#3b4252"
+
+[colors.footer_bar]
+background = "#434c5e"
+foreground = "#d8dee9"
+
+# Keyboard bindings
 [[keyboard.bindings]]
 action = "Paste"
 key = "V"
@@ -139,18 +194,18 @@ key = "End"
 mode = "~Alt"
 mods = "Shift"
 
-[scrolling]
-history = 5000
+# New convenient keybindings
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Control|Shift"
 
-[window]
-dynamic_padding = false
-opacity = 0.5
-title = "Alacritty"
+[[keyboard.bindings]]
+action = "SearchForward"
+key = "F"
+mods = "Control|Shift"
 
-[window.class]
-general = "Alacritty"
-instance = "Alacritty"
-
-[window.padding]
-x = 6
-y = 6
+[[keyboard.bindings]]
+action = "SearchBackward"
+key = "B"
+mods = "Control|Shift"

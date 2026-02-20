@@ -74,3 +74,7 @@ pipx='doas pipx'
 
 alias pip=pipx
 alias pip3=pipx
+
+alias hypr='systemctl --user start hyprland-session.service'
+
+alias +=doas

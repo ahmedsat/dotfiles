@@ -24,12 +24,11 @@ layouts = [
         min_secondary_size=85,
         new_client_position='after_current',
         ratio=0.70,
-        
         border_width=1,
         margin=10,
         single_border_width=0,
         single_margin=0,
-    ), 
+    ),
     layout.Max(),
 ]
 
@@ -57,12 +56,11 @@ widgetsList = [
         background=colors[3]
     ),
 
-    widget.GenPollUrl(
+    widget.GenPollCommand(
         background=colors[4],
         foreground=colors[1],
-        cmd = '/usr/bin/hostname',
-        shell = True,
-
+        cmd = 'vrsc',
+        update_interval=3600,
     ),
 
     # widget.HDDBusyGraph(
@@ -89,7 +87,7 @@ widgetsList = [
     ),
 
      widget.Systray(
-        icon_size=20,
+        icon_size=18,
         foreground=colors[1],
         background=colors[2],
         padding=5,
@@ -214,7 +212,7 @@ screens = [
                 ),
               *powerLineWidgetsList(widgetsList),
             ],
-            24,
+            18,
         ),
 
     ),
@@ -248,8 +246,8 @@ floating_layout = layout.Floating(
         Match(wm_class="confirmreset"),  # gitk
         Match(wm_class="makebranch"),  # gitk
         Match(wm_class="maketag"),  # gitk
-	    Match(wm_class="virtscreen"), #
-	    Match(wm_class="Test"),  # testing app
+	Match(wm_class="erp-reports"), #
+	Match(wm_class="Test"),  # testing app
         Match(title="Test"),  # testing app
         Match(wm_class="examples"),  # testing app
         Match(wm_class="app"),  # testing app

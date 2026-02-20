@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+TMP_FILE="/tmp/monitors"
+
+hyprctl monitors | grep "Monitor" | awk '{print $2}' > $TMP_FILE
+
+monitor=$((cat $TMP_FILE ; echo 'all')  | dmenu)
+
+echo $monitor
+
+
+# for monitor in $monitors ; do
+
+#   echo $monitor
+
+#   # wallpaper=$(find $DOTFILES_PATH/wallpaper/ -type f | shuf -n 1)
+
+#   # hyprctl hyprpaper unload $monitor
+
+#   # hyprctl hyprpaper preload $wallpaper $monitor
+
+#   # hyprctl hyprpaper wallpapers $monitor
+
+# done
+
+# wallpaper=$(find $DOTFILES_PATH/wallpaper/ -type f | shuf -n 1)
+
+# hyprctl hyprpaper unload all
+
+# hyprctl hyprpaper preload $wallpaper
+
+# hyprctl hyprpaper wallpapers
+
+# echo $wallpaper
+
+# # xargs xwallpaper --zoom

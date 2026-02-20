@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -xe
+
+pdftoppm -png -rx 300 -ry 300 -progress "$1" ~/Pictures/$2

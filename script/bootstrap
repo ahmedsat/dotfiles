@@ -15,6 +15,8 @@ DIRS=(
 	~/.config/go
 	~/.config/sxhkd
 	~/.config/conky
+	~/.config/hypr
+	~/.config/waybar
 	~/.local/emacs
 	~/.local/scripts
 	~/.local/wallpaper
@@ -46,6 +48,8 @@ ln -sf $SOURCE/../alacritty			~/.config/alacritty
 ln -sf $SOURCE/../go 				~/.config/go
 ln -sf $SOURCE/../sxhkd				~/.config/sxhkd
 ln -sf $SOURCE/../conky				~/.config/conky
+ln -sf $SOURCE/../hypr				~/.config/hypr
+ln -sf $SOURCE/../waybar				~/.config/waybar
 ln -sf $SOURCE/../emacs-profiles	~/.local/emacs
 ln -sf $SOURCE						~/.local/scripts
 ln -sf $SOURCE/../wallpaper			~/.local/wallpaper

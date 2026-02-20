@@ -1,0 +1,25 @@
+{
+  "cSpell.words": [
+    "binde",
+    "bindm",
+    "dmenu",
+    "drun",
+    "galculator",
+    "HYPRCURSOR",
+    "killactive",
+    "killall",
+    "movefocus",
+    "movetoworkspace",
+    "movewindow",
+    "resizeactive",
+    "resizewindow",
+    "submap",
+    "togglefloating",
+    "togglespecialworkspace",
+    "togglesplit",
+    "waybar",
+    "windowrulev",
+    "wofi",
+    "XCURSOR"
+  ]
+}
