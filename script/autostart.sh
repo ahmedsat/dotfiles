@@ -1,6 +1,6 @@
 #!/usr/bin/env bash 
 
-source $Home/.bashrc
+source "$HOME/.bashrc"
 
 # setdate
 
@@ -8,7 +8,7 @@ source $Home/.bashrc
 
 nm-applet & waybar &
 
-hyprpaper &
+/home/ahmedsat/.local/share/dotfiles/script/hyprpaper-random &
 
 sxhkd &
 
@@ -28,8 +28,5 @@ mkdir -p $HOME/drive
 # rclone mount --daemon work-drive: $HOME/drive &
 # sync-drive &
 
-find $DOTFILES_PATH/wallpaper/ -type f | shuf -n 1 | xargs xwallpaper --zoom &
-
 # set CapsLock key to work as Ctrl
 /usr/bin/setxkbmap -option "ctrl:nocaps"
-

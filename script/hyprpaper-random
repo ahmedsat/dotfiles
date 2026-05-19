@@ -1,36 +1,42 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
-TMP_FILE="/tmp/monitors"
+dotfiles_path="${DOTFILES_PATH:-$HOME/.local/share/dotfiles}"
+wallpaper_dir="$dotfiles_path/wallpaper"
+hyprpaper_config="/tmp/hyprpaper-random.conf"
+log_file="/tmp/hyprpaper-random.log"
 
-hyprctl monitors | grep "Monitor" | awk '{print $2}' > $TMP_FILE
+exec >>"$log_file" 2>&1
+echo "[$(date '+%F %T')] choosing random wallpaper"
 
-monitor=$((cat $TMP_FILE ; echo 'all')  | dmenu)
+mapfile -t wallpapers < <(
+  find "$wallpaper_dir" -maxdepth 1 -type f \
+    \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) \
+    | shuf
+)
 
-echo $monitor
+if ((${#wallpapers[@]} == 0)); then
+  notify-send "hyprpaper" "No images found in $wallpaper_dir" 2>/dev/null || true
+  exit 1
+fi
 
+wallpaper="${wallpapers[0]}"
 
-# for monitor in $monitors ; do
+mapfile -t monitors < <(hyprctl monitors | awk '/^Monitor / {print $2}')
 
-#   echo $monitor
+if ((${#monitors[@]} == 0)); then
+  monitors=("")
+fi
 
-#   # wallpaper=$(find $DOTFILES_PATH/wallpaper/ -type f | shuf -n 1)
+{
+  printf 'splash = false\n'
+  printf 'ipc = off\n'
+  for monitor in "${monitors[@]}"; do
+    printf 'wallpaper = %s,%s,cover\n' "$monitor" "$wallpaper"
+  done
+} >"$hyprpaper_config"
 
-#   # hyprctl hyprpaper unload $monitor
+pkill -x hyprpaper >/dev/null 2>&1 || true
+nohup hyprpaper --config "$hyprpaper_config" >/tmp/hyprpaper.log 2>&1 &
 
-#   # hyprctl hyprpaper preload $wallpaper $monitor
-
-#   # hyprctl hyprpaper wallpapers $monitor
-
-# done
-
-# wallpaper=$(find $DOTFILES_PATH/wallpaper/ -type f | shuf -n 1)
-
-# hyprctl hyprpaper unload all
-
-# hyprctl hyprpaper preload $wallpaper
-
-# hyprctl hyprpaper wallpapers
-
-# echo $wallpaper
-
-# # xargs xwallpaper --zoom
+notify-send "Wallpaper changed" "$(basename "$wallpaper")" 2>/dev/null || true

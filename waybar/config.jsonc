@@ -237,6 +237,7 @@
     "custom/totals": {
         "format": "{}",
         "interval": 60,
+        // "exec": "erp-reports-cli salary -fields all -format tsv | awk -F'\t' -v R=4 -v C=2 'NR==R { print $C; exit }'"
         "exec": "erp-reports-cli salary -fields all -format tsv | awk -F'\t' -v R=4 -v C=2 'NR==R { print $C; exit }'"
         // "exec": "tail /tmp/total -n 1 || echo '--.----'",
         // using \" is only needed for json parser to work awk dose no need it
