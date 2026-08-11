@@ -60,7 +60,7 @@ dwmDate(){
 	while true ; do now | xargs xsetroot -name ; sleep 1 ; done
 }
 
-alias setdate='doas ntpdate ntp.ubuntu.com'
+alias setdate='doas date -s "$(wget -S "http://www.google.com/" 2>&1 | grep -E "^[[:space:]]*[dD]ate:" | sed "s/^[[:space:]]*[dD]ate:[[:space:]]*//")"'
 
 alias :wq=exit
 

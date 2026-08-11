@@ -30,6 +30,7 @@ export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:
 PATH=$PATH:/sbin:/usr/local/bin:/usr/bin/:/bin:/usr/local/games/usr/games/:$HOME/.local/bin:$HOME/.local/go/bin/:$HOME/.local/fultter/bin
 PATH=$PATH:$DOTFILES_PATH/script:$DOTFILES_PATH/script/dmenu-script
 PATH=$PATH:$HOME/.cargo/bin/
+PATH=$PATH:~/.local/opt/antigravity
 PATH=$PATH:~/.local/opt/odin
 PATH=$PATH:~/.local/opt/Hubstaff
 PATH="$HOME/flutter/bin:$PATH"
@@ -82,3 +83,7 @@ if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
 fi
 
 tesk list --page 1 --size 10
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/ahmedsat/.local/bin:$PATH"
